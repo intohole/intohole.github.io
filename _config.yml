@@ -1,4 +1,2 @@
-permalink: /:title.html
-markdown: kramdown
 pygments: true
 redirects: yes
