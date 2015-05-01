@@ -2,7 +2,7 @@
 layout: default  
 title: Ubuntu install Jekyll  
 city: 北京   
-tags: [tech]  
+tags: [tech,web]  
 ---
 
 

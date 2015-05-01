@@ -2,7 +2,7 @@
 layout: default
 title: git过滤不提交文件
 city: 北京
-tags: [tech]
+tags: [tech,git]
 ---
 
 git 过滤不提交文件方法
