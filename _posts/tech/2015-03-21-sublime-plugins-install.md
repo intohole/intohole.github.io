@@ -7,43 +7,44 @@ tags: [tech]
 
 
 sublime 
-------------------
+==================
 
 
-##安装
-##在sublime中调出console [ctrl + `] ，粘贴如下代码，回车      
+安装
+----------
++ 在sublime中调出console [ctrl + `] ，粘贴如下代码，回车      
 
-    import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
-
-
-##添加插件  
-
-    * 安装插件后，按下[ctrl + shrift + p]组合件 ， 键入 Install Package后，稍等片刻，会出现package名称    
-
-##插件推荐
-###Markdown Editing  
-
-    * 一款可以在sublime编辑时，同时展示效果的插件 
-
-###Markdown Preview  
-
-    * 可以在浏览器中，查看markdown效果的插件，蛮赞的！  
-
-###SublimeCodeIntel  
-
-    * 代码提示功能！写python，写代码必备  
-
-###Python PEP8 AutoFormat    
-    * 快捷键[ctrl + alt + 8],python 自动代码格式化！代码看起来很简洁的样子    
-
-###ConvertToUTF8 
-    * 转换文件编码，使用方式 [ctrl + shrift + p],ConvertToUTF8 选择编码方式  
-
-###git   
-    * git版本控制器  
+        import urllib.request,os; pf = 'Package Control.sublime-package'; ipp= sublime.installed_packages_path(); urllib.request.install_opener(urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
 
 
-##快捷键
+
+添加插件 
+----------------------
+
+* 安装插件后，按下[ctrl + shrift + p]组合件 ， 键入 Install Package后，稍等片刻，会出现package名称    
+
+插件推荐
+---------------
+*   Markdown Editing  
+    *   一款可以在sublime编辑时，同时展示效果的插件 
+*   Markdown Preview  
+    *   可以在浏览器中，查看markdown效果的插件，蛮赞的！  
+*   SublimeCodeIntel   
+    *   代码提示功能！写python，写代码必备  
+*   Python PEP8 AutoFormat    
+    *   快捷键[ctrl + alt + 8],python 自动代码格式化！代码看起来很简洁的样子    
+
+*   ConvertToUTF8 
+    *  转换文件编码，使用方式 [ctrl + shrift + p],ConvertToUTF8 选择编码方式  
+*   git
+    - git版本控制器  
+*   ColorPicker
+    - sublime 给力前端选择器，[ctrl + shrift + c],调整好颜色后，按下选择，会自动把颜色值贴在，你鼠标的位置 
+
+
+快捷键
+----------------
+
 
         Ctrl+Shift+P：打开命令面板
         Ctrl+P：搜索项目中的文件
