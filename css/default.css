@@ -9,6 +9,7 @@
     font-family: "YueHei";
     src: url("./font/MFYueHei_Noncommercial-Regular.otf");
 }*/
+/*@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);*/
 
 * {
 	margin: 0;
@@ -21,7 +22,7 @@ html, body {
 
 body {
 	background-color: white;
-/*	font-family: "YueHei",'Helvetica Neue',Helvetica,Arial,Sans-serif;*/
+	/*font-family: "YueHei",'Helvetica Neue',Helvetica,Arial,Sans-serif;*/
 	font-family: 'Hiragino Sans GB',"Microsoft Yahei","寰蒋闆呴粦","Microsoft JhengHei",'WenQuanYi Micro Hei', 'Helvetica Neue', Verdana, Arial, Helvetica, sans-serif;
 	font-size: 18px;
 	/*font: 12px helvetica, arial, clean, sans-serif;*/
@@ -36,6 +37,7 @@ h1 {
 	font-weight: 1000;
 	margin-top: 10px;
 	margin-bottom: 1em;
+	color: #070707;
 }
 
 pre.nav.margin-for-mobile {
@@ -45,6 +47,7 @@ pre.nav.margin-for-mobile {
 h2 {
 	font-size: 28px;
 	font-weight: 700;
+	color:#201818;
 }
 
 h3 {
@@ -238,9 +241,7 @@ and (max-device-width : 480px) {
 	word-break: break-all;
 }
 
-.copyright a {
-	color:#bfbfbf;
-}
+
 
 .post-info {
 	margin-top: 4px;
@@ -254,40 +255,10 @@ and (max-device-width : 480px) {
 	color:#bfbfbf;
 }
 
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-#post {
-	margin: 10px;
-}
-/* poem */
-.poem-post {
-	text-align : center;
-	font-size: 18px;
-}
 
-.poem-post h1 {
-	font-size: 21px;
-}
-
-/* history */
-/*.history-post {
-	text-align : left;
-}
-*/
-.history-post {
-	text-align : left;
-	font-size: 18px;
-}
-
-.history-post h1 {
-	font-size: 25px;
-}
 
 /* standard */
-#post pre {
+post pre {
 	background-color: #F0F0F0;
 	padding: 0 .4em;
 	word-wrap: break-word;
@@ -297,11 +268,11 @@ and (max-device-width : 480px) {
 	border-radius: 5px;
 }
 
-#post ul, #post ol {
+post ul, #post ol {
 	margin-left: 1.35em;
 }
 
-#post code {
+post code {
 	border: 1px solid #ddd;
 	font-size: 85%;
 	padding: 0 .2em;
@@ -310,7 +281,7 @@ and (max-device-width : 480px) {
 	border-radius: 5px;
 }
 
-#post pre code {
+post pre code {
 	border: none;
 	font-size: 85%;
 }
@@ -322,6 +293,12 @@ and (max-device-width : 480px) {
 #related h2 {
 	margin-bottom: 1em;
 }
+
+section img {
+  max-width: 100%;
+}
+
+
 
 .power {
 	font-size: 80%;
@@ -357,6 +334,126 @@ and (max-device-width : 480px) {
 		top: 150px;
 	}	
 }
+/**add by intohole**/
+
+p {
+  font-size: 18px;
+  margin: 10px 0 15px 0;
+}
+
+footer p {
+  color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: #007edf;
+  text-shadow: none;
+}
+
+a:hover, a:focus {text-decoration: underline;}
+
+footer a {
+  color: #F2F2F2;
+  text-decoration: underline;
+}
+
+
+pre, code {
+  width: 100%;
+  color: #222;
+  background-color: #fff;
+  color: #999988; 
+  font-style: italic;
+  font-size: 14px;
+
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+pre {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  overflow: auto;
+}
+/**fix code block set **/
+code {
+	color: #0E0F0E;
+  	padding: 3px;
+  	margin: 0 3px;
+  	font-family: monospace, serif;
+  	box-shadow: 0 0 10px rgba(0,0,0,.1);
+  	background: #ECECEC;
+}
+
+pre code {
+  display: block;
+  box-shadow: none;
+}
+
+blockquote {
+  color: #666;
+  margin: 0 0 20px 2px;
+  padding-left: 20px;
+  border-left: 3px solid #bbb;
+  font-style: italic;
+}
+
+
+.copyright {
+	margin: 10px 0;
+	padding: 10px 20px;
+	line-height: 1;
+	border-radius: 5px;
+	background: #f5f5f5;
+}
+
+ul, ol, dl {
+  margin: 0 0 15px 0;
+  padding-left: 20px;
+}
+
+ol {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: item;
+}
+
+ol li { display: block; } 
+
+
+ol>li:before {
+  float: left;
+  margin-right: 10px;
+  font-weight:bold;
+  text-align:right;
+  counter-increment: item;
+  content:counter(item) ".";
+}
+
+dl dt {
+  font-weight: bold;
+}
+
+dl dd {
+  margin-left: 0;
+  padding-left: 0;
+  font-style: italic;
+}
+
+dl p {
+  padding-left: 20px;
+  font-style: italic;
+}
+ul li > ul {
+  line-height: 1.4 ;
+  color: #131614;
+
+}
+
+/*****/
 /*****************************************************************************/
 /*
 /* trick
