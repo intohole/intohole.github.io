@@ -1,4 +1,4 @@
 permalink: /:title.html
-markdown: rdiscount
+markdown: kramdown
 pygments: true
 redirects: yes
