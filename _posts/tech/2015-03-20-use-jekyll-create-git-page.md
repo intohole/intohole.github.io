@@ -6,10 +6,10 @@ tags: [tech]
 ---
 
 
-Ubuntu安装Jekyll
+##Ubuntu安装Jekyll
 ---------------
 
-+ [Jekyll网站](http://jekyll.bootcss.com/)
+###[Jekyll网站](http://jekyll.bootcss.com/)              
 
             #ruby 环境安装
             sudo apt-get install ruby1.9.3   
@@ -29,8 +29,7 @@ Ubuntu安装Jekyll
             #安装 markdown 依赖  
             sudo gem install rdiscount
 
-Ubuntu使用Jekyll
--------------
+##Ubuntu使用Jekyll    
 
             jekyll build 
             jekyll server
