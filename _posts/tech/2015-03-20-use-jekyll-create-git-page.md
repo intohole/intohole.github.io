@@ -9,9 +9,7 @@ tags: [tech]
 Ubuntu安装Jekyll
 ---------------
 
-+ [Jekyll网站](http://jekyll.bootcss.com/)    
-
-:::code     
++ [Jekyll网站](http://jekyll.bootcss.com/)
 
             #ruby 环境安装
             sudo apt-get install ruby1.9.3   
@@ -32,10 +30,7 @@ Ubuntu安装Jekyll
             sudo gem install rdiscount
 
 Ubuntu使用Jekyll
--------------   
-
-:::code 
-    
+-------------
 
             jekyll build 
             jekyll server
@@ -50,3 +45,4 @@ Ubuntu使用Jekyll
 + [ubuntu 搭建 Jekyll环境](http://www.07net01.com/program/239652.html)
 + [搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)
 + [StrayBirds](https://github.com/minixalpha/StrayBirds)
++ [我的jekyll配置和修改](http://blog.javachen.com/2013/08/31/my-jekyll-config/)

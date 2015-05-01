@@ -24,29 +24,27 @@ sublime
 插件推荐
 -----------------
 + Markdown Editing
-    * 一款可以在sublime编辑时，同时展示效果的插件
+        * 一款可以在sublime编辑时，同时展示效果的插件
 
 + Markdown Preview
-    * 可以在浏览器中，查看markdown效果的插件，蛮赞的！
+        * 可以在浏览器中，查看markdown效果的插件，蛮赞的！
 
 + SublimeCodeIntel
-    * 代码提示功能！写python，写代码必备
+        * 代码提示功能！写python，写代码必备
 
 + Python PEP8 AutoFormat
-    * 快捷键[ctrl + alt + 8],python 自动代码格式化！代码看起来很简洁的样子
+        * 快捷键[ctrl + alt + 8],python 自动代码格式化！代码看起来很简洁的样子
 
 + ConvertToUTF8
-    * 转换文件编码，使用方式 [ctrl + shrift + p],ConvertToUTF8 选择编码方式
+        * 转换文件编码，使用方式 [ctrl + shrift + p],ConvertToUTF8 选择编码方式
 
-+ Git 
-    * git版本控制器
++ Git
+        * git版本控制器
 
 
 快捷键
 ----------------
 
-:::code      
-    
         Ctrl+Shift+P：打开命令面板
         Ctrl+P：搜索项目中的文件
         Ctrl+G：跳转到第几行
