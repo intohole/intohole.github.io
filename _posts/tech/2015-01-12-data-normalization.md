@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 归一化
 tags: [tech,数据挖掘]
 ---
@@ -20,9 +20,11 @@ tags: [tech,数据挖掘]
  其中<img src="http://latex.codecogs.com/gif.latex?\mu" title="均值"/>为所有样本数据的均值，<img src="http://latex.codecogs.com/gif.latex?\varphi" title="标准差"/>为所有样本数据的标准差。
 
 + 对数函数转换
+
 <p align="center"><img src="http://latex.codecogs.com/gif.latex?\\x^{*}=\log_{10}{^x)}/\log_{10}{^(max)}" title="对数函数转换" /></p>
   
 + 反正切函数转换
+
 <p align="center"><img src="http://latex.codecogs.com/gif.latex?\\x^{*}=atan(x)*\pi" title="反正切函数" /></p>
 
 参考

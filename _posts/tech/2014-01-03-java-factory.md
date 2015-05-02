@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 city: 南京
 title: Java 工厂模式
 tags: [tech,java]

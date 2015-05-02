@@ -1,7 +1,7 @@
 ---
 city: 南京
 title: java 零拷贝(zero copy)  
-layout: default  
+layout: post  
 tags: [tech,java] 
 ---
 

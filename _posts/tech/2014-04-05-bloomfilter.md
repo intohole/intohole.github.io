@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 tags: [tech,algorithm]
 title: 布隆过滤器
 city: 南京

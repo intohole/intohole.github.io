@@ -1,6 +1,6 @@
 ---
 title: python ssh 远程链接代码  
-layout: default  
+layout: post  
 tags: [tech,python]  
 city: 南京
 ---

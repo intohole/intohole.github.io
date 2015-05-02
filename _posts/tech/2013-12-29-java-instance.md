@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Java 单例模式
 city: 南京
 tags: [tech,java]

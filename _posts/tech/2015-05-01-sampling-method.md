@@ -1,7 +1,7 @@
 ---
 title: 抽样方法介绍
 tags: [tech,algorithm,ml]
-layout: default
+layout: post
 city: 北京
 ---
 

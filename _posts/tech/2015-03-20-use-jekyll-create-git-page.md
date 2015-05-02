@@ -1,5 +1,5 @@
 ---
-layout: default  
+layout: post  
 title: Ubuntu install Jekyll  
 city: 北京   
 tags: [tech,web]  

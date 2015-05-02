@@ -1,5 +1,5 @@
 ---
-layout: default  
+layout: post  
 title: sublime插件安装   
 city: 北京   
 tags: [tech]  

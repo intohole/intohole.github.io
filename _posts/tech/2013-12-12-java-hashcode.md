@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Java　Hashcode 
 tags: [tech,java]
 city: 南京

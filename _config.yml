@@ -1,3 +1,6 @@
-redirects: yes
-description: code can prove me !
-highlighter: pygments
+comments: 
+    provider: duoshuo
+    duoshuo:
+        short_name: intohole
+title: 布衣客
+safe: false

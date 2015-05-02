@@ -9,7 +9,22 @@
    <meta name="author" content="intohole" />
    <link rel="stylesheet" href="/css/default.css" type="text/css" media="screen, projection" /> 
    <link rel="stylesheet" href="/css/code.css" typt="text/css">
-   <link rel="icon" href="/images/head.jpg" type="image/x-icon" />   
+   <link rel="icon" href="/images/head.jpg" type="image/x-icon" />  
+   <!-- 评论多说加载 -->
+   {% if site.comments.provider == 'duoshuo' %}
+   <script type="text/javascript">
+      var duoshuoQuery = {short_name:"{{ site.comments.duoshuo.short_name }}"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = 'http://static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+    </script>
+    {% endif %}
+     <!-- 多说评论script END -->
+    
    <script type="text/javascript" charset="utf-8">
    // Mobile Safari in standalone mode
    if(("standalone" in window.navigator) && window.navigator.standalone){

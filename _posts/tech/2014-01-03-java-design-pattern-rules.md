@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 city: 南京
 title: Java设计模式规则
 tags: [tech,java]

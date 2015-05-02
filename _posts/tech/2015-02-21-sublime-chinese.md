@@ -1,5 +1,5 @@
 ---
-layout: default  
+layout: post  
 title: Ubuntu sublime text 3  输入中文  
 tags: [tech]   
 ---

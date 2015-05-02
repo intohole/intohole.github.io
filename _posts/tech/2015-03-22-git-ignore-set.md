@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: git过滤不提交文件
 city: 北京
 tags: [tech,git]

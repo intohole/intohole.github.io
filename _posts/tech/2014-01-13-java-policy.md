@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 tags: [tech,java]
 title: Java 策略模式 
 city: 北京
