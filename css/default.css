@@ -450,13 +450,34 @@ dl p {
   padding-left: 20px;
   font-style: italic;
 }
-ul li > ul {
+ul li  {
   line-height: 1.4 ;
   color: #131614;
 
 }
 
+/**table**/
 
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+th, td  {
+  text-align:left;
+  padding:5px 10px;
+  border-bottom:1px solid #e5e5e5;
+  font-size: 10px;
+}
+
+th, td >p {
+  text-align:left;
+  padding:5px 10px;
+  border-bottom:1px solid #e5e5e5;
+  font-size: 10px;
+}
+
+/**table***/
 /*****/
 /*****************************************************************************/
 /*

@@ -40,12 +40,19 @@
 	
 <div class="site">
 	<div>
-  <pre class="nav margin-for-mobile">["<a href='/tech.html'>编程</a>","<a href='/life.html'>生活"]</pre>
+  <pre class="nav margin-for-mobile">["<a href='/index.html'>Home</a>","<a href='/tech.html'>编程</a>","<a href='/life.html'>生活</a>","<a href='/resume.html'>关于me</a>"]</pre>
 	</div>
   <br />
   {{ content }}
   
-<div class="footer"></div>
+<div class="footer">
+  <div class="post-info">
+    <a href="/">首页</a>&nbsp;&nbsp;| &nbsp;
+    {{ page.date | date: "%Y年%m月%d日" }} 
+    {% if page.city %} 
+      于 {{ page.city }}
+    {% endif %}
+  </div>
 </div>
 
 <a href="http://github.com/intohole" target="_blank">

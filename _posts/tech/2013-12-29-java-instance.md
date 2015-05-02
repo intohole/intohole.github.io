@@ -7,14 +7,11 @@ tags: [tech,java]
 
 单例模式
 =============
-单例模式是一种常用的软件设计模式。在它的核心结构中只包含一个被称为单例类的特殊类。通过单例模式可以保证系统中一个类只有一个实例而且该实例易于外界访问，从而方便对实例个数的控制并节约系统资源。如果希望在系统中某个类的对象只能存在一个，单例模式是最好的解决方案。
+单例模式是一种常用的软件设计模式。在它的核心结构中只包含一个被称为单例类的特殊类。通过单例模式可以保证系统中一个类只有一个实例而且该实例易于外界访问，从而方便对实例个数的控制并节约系统资源。如果希望在系统中某个类的对象只能存在一个，单例模式是最好的解决方案。      
 
 + 节省资源
 + 唯一性
 
-
-
-   
         public class JavaInstance {
             private static JavaInstance = null; //设置单例模式句柄为null
             private JavaInstance()
@@ -40,25 +37,25 @@ tags: [tech,java]
                 //do something
             }
       }
-:::java
 
-    //枚举类型 可以避免多线程同步问题 ，防止反序列化重新创建新的对象
-    public enum JavaInstance(){
-        INSTANCE;
-        private JavaInstance(){
-        //初始化
-        }
-    }
 
-    //最简单的方式
-    public class JavaInstance(){
-        private static JavaInstance instance = new JavaInstance();
-        private JavaInstance()
-        {
-           //初始化 
+        //枚举类型 可以避免多线程同步问题 ，防止反序列化重新创建新的对象
+        public enum JavaInstance(){
+            INSTANCE;
+            private JavaInstance(){
+            //初始化
+          }
         }
-        public static getInstance()
-        {
-            return instance;
+
+        //最简单的方式
+        public class JavaInstance(){
+            private static JavaInstance instance = new JavaInstance();
+            private JavaInstance()
+            {
+              //初始化 
+            }
+            public static getInstance()
+            {
+                return instance;
+            }
         }
-    }
