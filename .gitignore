@@ -2,3 +2,4 @@ fts/
 _site/
 .DS_Store
 *.swp
+_post/*/*.html
