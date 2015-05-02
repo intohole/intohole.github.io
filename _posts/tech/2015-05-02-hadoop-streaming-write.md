@@ -21,8 +21,9 @@ Mapreduce
 Hadoop Streaming 命令行    
 ---------------
 
-```c
-    $HADOOP_HOME/bin/hadoop jar \streaming
+
+
+    $HADOOP_HOME/bin/hadoop jar streaming
     options：
         (1)-input：输入文件路径
         (2)-output：输出文件路径
@@ -38,11 +39,16 @@ Hadoop Streaming 命令行
             4)stream.num.map.output.key.fields：指定map task输出记录中key所占的域数目
             5)stream.reduce.input.field.separator/stream.reduce.output.field.separator：reduce task输入/输出数据的分隔符，默认均为\t。
             6)stream.num.reduce.output.key.fields：指定reduce task输出记录中key所占的域数目
-```
 
-<p></p>
 
-```python 
+<p></p>  
+<p></p>   
+ 
+streaming 程序编写  
+-------------------
+
+{% highlight python %}
+
         #这是一个python版本hadoop streaming[Map|reduce]     
         import sys
 
@@ -51,7 +57,8 @@ Hadoop Streaming 命令行
             #如果是reduce ， 数据是有序的，按照顺序处理相同key就可以了
             #dosomthing
         #数据什么样的分隔符，可以在hadoop streaming 进行设置 ， 但是程序还是会读入行；
-```
+
+{% endhighlight %}
 
 
 你要做的
@@ -65,9 +72,12 @@ Trick
 ---------
 + 在linux中模拟mapreduce
 
-```c
+{% highlight c %}
+
     cat data.txt | python map.py | sort | python reduce.py #输入数据，在map里处理，管道输出，sort排序后，reduce进行处理
-```
+
+{% endhighlight %}
+
 
 
 参考
