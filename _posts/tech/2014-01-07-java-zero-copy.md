@@ -12,6 +12,7 @@ java 零拷贝技术(zero copy) 大文件拷贝
 + 文件特别大，过去的io工具，多线程，慢（我的理解是读取文件时，磁盘是指针寻址，增加磁盘读取时间）  
 + 零拷贝（我理解为，磁盘存取是块来存取的，我们读取文件的时候，整块读，速度肯定很快）  
 
+{% highlight java %}
         package com.weidou.mota.output;      
         import java.io.File;
         import java.io.FileInputStream;
@@ -148,7 +149,7 @@ java 零拷贝技术(zero copy) 大文件拷贝
             spiltFilesBySize(fileQueue, size, output, prex, suffix);
         }
     }
-
+{% endhighlight %}
 
 总结
 ----------------------------

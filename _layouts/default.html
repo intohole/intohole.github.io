@@ -8,7 +8,11 @@
    <title>{{ page.title }}</title>
    <meta name="author" content="intohole" />
    <link rel="stylesheet" href="/css/default.css" type="text/css" media="screen, projection" /> 
-   <link rel="stylesheet" href="/css/code.css" typt="text/css">
+   {% if site.code_type %}
+      <link rel="stylesheet" href="/css/code_{{site.code_type}}.css" typt="text/css">
+   {%else%}
+      <link rel="stylesheet" href="/css/code.css" typt="text/css">
+   {% endif %}
    <link rel="icon" href="/images/head.jpg" type="image/x-icon" />  
    <!-- 评论多说加载 -->
    {% if site.comments.provider == 'duoshuo' %}

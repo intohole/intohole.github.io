@@ -10,7 +10,7 @@ city: 南京
 使用python  ssh 代码实现
 --------------------
 
-:::python 
+{% highlight python %}
         
         #coding=utf-8
         #!/usr/bin/env python
@@ -24,6 +24,7 @@ city: 南京
         for std in stdout.readlines():
             print std,
         client.close()
+{% endhighlight  %}
 
 ssh
 ------------

@@ -12,6 +12,7 @@ tags: [tech,java]
 + 节省资源
 + 唯一性
 
+{% highlight java %}
         public class JavaInstance {
             private static JavaInstance = null; //设置单例模式句柄为null
             private JavaInstance()
@@ -59,3 +60,4 @@ tags: [tech,java]
                 return instance;
             }
         }
+{% endhighlight %}

@@ -4,3 +4,9 @@ comments:
         short_name: intohole
 title: 布衣客
 safe: false
+highlighter: pygments
+redirects: yes
+site_domain: http://www.buyiker.com
+author: IntoHole
+#monokai manni rrt perldoc borland colorful default murphy vs trac fruity native
+code_type: manni

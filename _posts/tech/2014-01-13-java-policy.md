@@ -12,7 +12,8 @@ java 策略模式
 - 动态的改变对象的行为  
 - 可以组合调整类的表现方式  
 
-:::java
+
+{% highlight java %}
        
 
     package com.weidou.mota.patterns.policy;
@@ -114,6 +115,7 @@ java 策略模式
             new ToughGirl().doAction();
         }
       }
+{% endhighlight %}
 
 总结
 -----------------
