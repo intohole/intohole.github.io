@@ -10,12 +10,13 @@ Hadoop 隐藏文件设置
 
 + 按照常理来说，我不会认为hadoop上有隐藏文件，只会有权限这样设置，但是当我真的走过这个坑的时候，深深寒意，提醒我，tm我不知道啊
 + Hadoop Mapreduce，设置的文件过滤器，会自动过滤掉 "_" "." 两个标点开头的文件
-+ 例如：/xx/_a hadoop fs list /xx/ 是能看见_a，但是mapreduce作为输入是不能看见的
++ 例如：/xx/_a hadoop fs ls /xx/ 是能看见_a，但是mapreduce,使用-input /xx/*,作为输入是不能看见的/xx/_a的
 + 没图没真相，贴代码；
 
 
-:::
-    
+:::code
+
+    {% highlight c %}    
     private long minSplitSize = 1;
     //一个隐藏文件实现，过滤开头为_ 和. 文件过滤器
     private static final PathFilter hiddenFileFilter = new PathFilter(){
@@ -43,7 +44,7 @@ Hadoop 隐藏文件设置
         if (jobFilter != null) {
             filters.add(jobFilter);
         }
-        PathFilter inputFilter = new MultiPathFilter(filters); //常见多重过滤器
+        PathFilter inputFilter = new MultiPathFilter(filters); //创建多重过滤器
         FileStatus[] result;
         int numThreads = job
             .getInt(
@@ -74,5 +75,6 @@ Hadoop 隐藏文件设置
         LOG.info("Total input paths to process : " + result.length);
         return result;
     } 
+    {% endhighlight %}
 
 
