@@ -45,3 +45,5 @@ Ubuntu 安装nodejs
 + [准备Nodejs开发环境Ubuntu](http://blog.fens.me/nodejs-enviroment/)
 + [搭建 Node.js 开发环境](https://github.com/alsotang/node-lessons/tree/master/lesson0)
 + [Ubuntu 14.04下搭建Node.js开发环境](http://www.linuxidc.com/Linux/2014-12/110983.htm)
++ [Ubuntu下搭建Node.js+express web开发框架](http://developer.51cto.com/art/201202/315938.htm)
++ [Installing Node.js via package manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#arch-linux)
