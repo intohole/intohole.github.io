@@ -4,18 +4,15 @@ title: 布衣客
 ---
 
 <div id="home">
-  <h1>编程</h1>
-  <ul class="posts">
-	{% for post in site.tags.tech limit:10 %} 
-		<li><span>{{ post.date | date: "%Y年%m月%d日" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% for tag in site.indexs %}
+	{% if tag.tag %}
+           <h1>{{ tag.site }}</h1>
+           <ul class="posts">
+	        {% for post in site.tags.[tag.tag] limit: site.page_limit %} 
+		        <li><span>{{ post.date | date: "%Y年%m月%d日" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+            	{% endfor %}
+	<a href="/{tag.url}">更多</a>
+           </ul>
+	{% endif %}
     {% endfor %}
-	<a href="/tech.html">更多</a>
-  </ul>
-  <h1>生活</h1>
-  	<ul class="posts">
-	{% for post in site.tags.life limit:10 %} 
-		<li><span>{{ post.date | date: "%Y年%m月%d日" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-	<a href="/life.html">更多</a>
-  </ul>
 </div>

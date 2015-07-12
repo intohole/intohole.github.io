@@ -18,4 +18,6 @@ Python Install Packages : Microsoft Visual c++ 9.0 is required
 	+ [Micorsoft Visual C++ Compiler for Python 2.7](http://www.microsoft.com/en-us/download/details.aspx?id=44266)　　　　
 		
         
-        		msiexec /i /m VcForPython27.msi
+        {% highlight c %}
+                  msiexec /i /m VcForPython27.msi
+		{% endhighlight %}

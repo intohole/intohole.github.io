@@ -58,17 +58,8 @@
 <body>
 	
 <div class="site">
-	<div>
-  <pre class="nav margin-for-mobile">[
-  {% for link in site.indexs %}
-    {% if forloop.last  %}
-      "<a href='{{ link.site }}' >{{ link.link }}</a>"
-    {% else %}
-      "<a href='{{ link.site }}' >{{ link.link }}</a>,"
-    {% endif %}
-  {%  endfor %}]</pre>
-	</div>
-  <br />
+  <div><pre class="nav margin-for-mobile">[{% for link in site.indexs %}{% if forloop.last  %}"<a href='{{ link.url }}' >{{ link.site }}</a>"{% else %}"<a href='{{ link.url }}' >{{ link.site }}</a>",{% endif %}{%  endfor %}]</pre></div>
+  <br/>
   {{ content }}
   
 <div class="footer">

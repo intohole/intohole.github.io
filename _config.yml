@@ -10,12 +10,17 @@ site_domain: http://www.buyiker.com
 author: IntoHole
 #monokai manni rrt perldoc borland colorful default murphy vs trac fruity native
 code_type: manni
-index_html:
-    -   site:   首页
-        url:    index.html
-    -   site:   编程
-        url:    tech.htmml
-    -   site:   生活
-        url:    life.html
-    -   site:   关于me
-        url:    resume.html 
+#index.html 每个ｔａｇ展现的链接数目
+page_limit: 10
+#设置变量时候，不要ｔａｂ，一定要空格
+indexs:
+ - site: 首页
+   url: index.html
+ - site: 编程
+   url: tech.html
+   tag: tech
+ - site: 生活
+   url: life.html
+   tag: life
+ - site: 关于me
+   url: resume.html
