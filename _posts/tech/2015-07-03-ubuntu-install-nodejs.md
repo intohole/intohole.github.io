@@ -39,6 +39,12 @@ Ubuntu 安装nodejs
         $sudo ln -s /usr/local/bin/node /usr/bin/node
         $sudo ln -s /usr/local/bin/npm /usr/bin/npm
 
+express安装
+-------------
+        
+        $sudo npm install -g express-generator
+
+
 
 参考 
 -------------
@@ -47,3 +53,4 @@ Ubuntu 安装nodejs
 + [Ubuntu 14.04下搭建Node.js开发环境](http://www.linuxidc.com/Linux/2014-12/110983.htm)
 + [Ubuntu下搭建Node.js+express web开发框架](http://developer.51cto.com/art/201202/315938.htm)
 + [Installing Node.js via package manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#arch-linux)
++ [express官网-开始](http://www.expressjs.com.cn/guide.html)

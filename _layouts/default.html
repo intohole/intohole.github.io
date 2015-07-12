@@ -59,7 +59,14 @@
 	
 <div class="site">
 	<div>
-  <pre class="nav margin-for-mobile">["<a href='/index.html'>Home</a>","<a href='/tech.html'>编程</a>","<a href='/life.html'>生活</a>","<a href='/resume.html'>关于me</a>"]</pre>
+  <pre class="nav margin-for-mobile">[
+  {% for link in site.indexs %}
+    {% if forloop.last  %}
+      "<a href='{{ link.site }}' >{{ link.link }}</a>"
+    {% else %}
+      "<a href='{{ link.site }}' >{{ link.link }}</a>,"
+    {% endif %}
+  {%  endfor %}]</pre>
 	</div>
   <br />
   {{ content }}

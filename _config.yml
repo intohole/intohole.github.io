@@ -10,3 +10,12 @@ site_domain: http://www.buyiker.com
 author: IntoHole
 #monokai manni rrt perldoc borland colorful default murphy vs trac fruity native
 code_type: manni
+index_html:
+    -   site:   首页
+        url:    index.html
+    -   site:   编程
+        url:    tech.htmml
+    -   site:   生活
+        url:    life.html
+    -   site:   关于me
+        url:    resume.html 
