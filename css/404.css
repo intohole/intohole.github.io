@@ -13,7 +13,6 @@ body{
 
 
 
-
 .fl {float:left;display:inline;}
 .fr {float:right;display:inline;}
 .cf {display:block;zoom:1;}
@@ -23,7 +22,14 @@ body{
 .logo_wrap{
     height: 84px;
 }
-
+#logo{
+    float: left;
+    width: 83px;
+    height: 70px;
+    padding-top: 10px;
+    display: inline-block;
+    background: url(../images/logo.png) no-repeat;
+}
 #title{
     float: left;
     line-height: 80px;
@@ -246,25 +252,25 @@ i:nth-child(n+3){
     margin: 0 auto;
 }
 .not_found{
-    float: center;
-    width: 650px;
+    float: right;
+    width: 600px;
     height: auto;
-    margin-top: 170px;
+    margin-top: 150px;
     position: relative;
 }
 
 .not_found_404 {
-  text-align: center;
+  text-align: left;
   font-family: cursive,sans-serif;
-  font-size: 210px;
+  font-size: 150px;
   font-weight: bold;
-  line-height: 170px;
-  letter-spacing: 35px;
+  line-height: 150px;
+  letter-spacing: 25px;
   color: #fff;
   -webkit-transform: rotate(18deg);
           transform: rotate(18deg);
-  -webkit-transform-origin: 12% 60%;
-   transform-origin: 12% 60%;
+  -webkit-transform-origin: 12% 20%;
+   transform-origin: 12% 40%;
 }
 
 .not_found_404 span {
@@ -319,6 +325,10 @@ i:nth-child(n+3){
     border-left: 1px dashed rgba(0, 0, 0, 0.1);
     border-right: 1px dashed rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
+    /*-webkit-transform: rotate(6deg) skew(0,0) translate(-60%,-5px);
+    -moz-transform: rotate(6deg) skew(0,0) translate(-60%,-5px);
+    -o-transform: rotate(6deg) skew(0,0) translate(-60%,-5px);
+    transform: rotate(6deg) skew(0,0) translate(-60%,-5px);*/
 }
 
 @-webkit-keyframes 'not'{
