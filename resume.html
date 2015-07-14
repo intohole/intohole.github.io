@@ -4,11 +4,16 @@ title: 介绍
 ---
 
 <div id="home">
-	<ul class="posts">
-		<li>Java python shell c and etc... </li>
-		<li>Mail：aihai2800 AT 126 Dot com</li>
-		<li>Github：<a href="https://github.com/intohole" target="_blank">@intohole</a></li>
-		<li>Weibo：<a href="http://weibo.com/1152049780" target="_blank">@看似大男人的小男人</a></li>
-	</ul>
-</p>
+    <ul class="posts">
+        {% if site.resume.Desc %}
+            {% for desc in site.resume.Desc %}
+                <li>{{desc.info}}</li>
+            {% endfor %}
+        {% endif %}
+        {% if site.resume.Jobs %}
+            {% for job in site.resume.Jobs %}
+                <li>{{job.type}} :<a href="{{job.url}}" target="_blank">@{{job.name}}</a></li>
+            {% endfor %}
+        {% endif %}
+    </ul>
 </div>
