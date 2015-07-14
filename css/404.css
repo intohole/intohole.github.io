@@ -10,30 +10,6 @@ body{
 }
 
 
-#duobei_wrap{
-    float: left;
-    position: relative;
-    width: 600px;
-    /*height: 600px;*/
-    margin-top: 150px;
-    /*margin-left: 100px;*/
-    -webkit-traisition: all 1s ease-out;
-    -moz-traisition: all 1s ease-out;
-    -o-traisition: all 1s ease-out;
-    traisition: all 1s ease-out;
-}
-#duobei{
-    margin: 60px auto;
-    position: absolute;
-    -webkit-transform: rotate(-30deg);
-    -moz-transform: rotate(-30deg);
-    -o-transform: rotate(-30deg);
-    transform: rotate(-30deg);
-    -webkit-transition: all 1s ease-in-out;
-    -webkit-transform-origin: 50%;
-    transition: all 1s ease-in-out;
-    transform-origin: 50%;
-}
 
 
 
@@ -47,14 +23,7 @@ body{
 .logo_wrap{
     height: 84px;
 }
-#logo{
-    float: left;
-    width: 83px;
-    height: 70px;
-    padding-top: 10px;
-    display: inline-block;
-    background: url(../images/logo.png) no-repeat;
-}
+
 #title{
     float: left;
     line-height: 80px;
@@ -277,20 +246,20 @@ i:nth-child(n+3){
     margin: 0 auto;
 }
 .not_found{
-    float: right;
-    width: 400px;
+    float: center;
+    width: 650px;
     height: auto;
-    margin-top: 150px;
+    margin-top: 170px;
     position: relative;
 }
 
 .not_found_404 {
   text-align: center;
   font-family: cursive,sans-serif;
-  font-size: 150px;
+  font-size: 210px;
   font-weight: bold;
-  line-height: 150px;
-  letter-spacing: 25px;
+  line-height: 170px;
+  letter-spacing: 35px;
   color: #fff;
   -webkit-transform: rotate(18deg);
           transform: rotate(18deg);
