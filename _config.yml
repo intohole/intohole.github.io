@@ -1,21 +1,21 @@
-comments: 
+comments: #多说账户申请
     provider: duoshuo
     duoshuo:
-        short_name: intohole
-title: 布衣客
-safe: false
-highlighter: pygments
-redirects: yes
-site_domain: http://www.buyiker.com
-author: IntoHole
+        short_name: xxxx
+title: 网站标题
+safe: false #不要动
+highlighter: pygments #不要动
+redirects: yes #不要动
+site_domain: 设置域名
+author: 作者名称
 #monokai manni rrt perldoc borland colorful default murphy vs trac fruity native
 code_type: manni
-#index.html 每个ｔａｇ展现的链接数目
-page_limit: 10
+
+page_limit: 10 #设置索引页
 #设置变量时候，不要ｔａｂ，一定要空格
-indexs:
+indexs: 
  - site: 首页
-   url: index.html
+   url: index.html 
  - site: 编程
    url: tech.html
    tag: tech
@@ -25,24 +25,22 @@ indexs:
  - site: 关于me
    url: resume.html
 
+#404页面配置
 page_404:
  refresh_time:7
-
  btns:
-   - info: 看看我的Github
-     url: https://github.com/intohole
-   - info: 看看首页
-     url: /index.html
+   - info: btn上的名称
+     url: 跳转链接
 
 
+#简历页面
 resume:
  Desc:
-   - info: "Java python shell c and etc... "
-   - info: "Mail：aihai2800 AT 126 Dot com"
-Jobs:
+   - info: "介绍信息"
+Jobs: #设置介绍网站链接
    - type: Github
-     name: intohole
-     url: https://github.com/intohole
+     name: xxx
+     url: https://github.com/xx
    - type: Weibo
-     name: 看似大男人的小男人
-     url: http://weibo.com/1152049780 
+     name: xxx
+     url: http://weibo.com/xx
