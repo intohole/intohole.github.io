@@ -27,7 +27,6 @@ indexs:
 
 page_404:
  refresh_time:7
-
  btns:
    - info: 看看我的Github
      url: https://github.com/intohole
@@ -39,6 +38,7 @@ resume:
  Desc:
    - info: "Java python shell c and etc... "
    - info: "Mail：aihai2800 AT 126 Dot com"
+
 Jobs:
    - type: Github
      name: intohole
