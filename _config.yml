@@ -39,10 +39,12 @@ resume:
    - info: "Java python shell c and etc... "
    - info: "Mail：aihai2800 AT 126 Dot com"
 
-Jobs:
-   - type: Github
+ Jobs:
+   - 
+     type: Github
      name: intohole
      url: https://github.com/intohole
-   - type: Weibo
+   - 
+     type: Weibo
      name: 看似大男人的小男人
      url: http://weibo.com/1152049780 
