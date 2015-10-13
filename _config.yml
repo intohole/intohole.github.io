@@ -24,7 +24,9 @@ indexs:
    tag: life
  - site: 关于me
    url: resume.html
-
+ - site: 机器学习
+   url: ml.html
+   tag: ml
 page_404:
  refresh_time: 7
  btns:
