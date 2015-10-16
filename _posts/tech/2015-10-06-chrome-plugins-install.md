@@ -17,6 +17,8 @@ chrome插件推荐集合
 	- 让你轻松调试网页在不同user-agent，为spider-man提供方便
 + [xpath finder]()
 	- 可以从F12中，找到它的影子，可以帮你用xpath找到你想要的；数据处理有帮助
++ [xpath helper]()
+	- 如果你会xpath，可以筛选你想要的
 + [有道智能翻译2.0美化版]()
 	- 感觉有bug ， 不过真的很好用，可以选择好几种模式，让你读懂页面英文
 + [FaWave(发微)]()
@@ -29,3 +31,5 @@ chrome插件推荐集合
 	- markdown编辑器，简单实用
 + [Proxy SwitchySharp]()
 	- 翻墙好工具啊
++ [One Tab]()
+	- 节省chrome资源利器，让你浏览器tab变的很干净

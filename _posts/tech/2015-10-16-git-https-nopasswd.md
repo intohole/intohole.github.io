@@ -11,7 +11,6 @@ Git Https 免登录
 
 + 方法1
 	
-	:::code 
 		
 		创建文件：
 			touch ~/.git-credentials
@@ -29,7 +28,7 @@ Git Https 免登录
 
 + 方法2
 	
-	:::code 
+
 		
 		创建文件
 			touch ~/.netrc
