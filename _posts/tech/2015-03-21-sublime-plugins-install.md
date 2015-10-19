@@ -14,10 +14,16 @@ sublime
 ----------
 + 在sublime中调出console [ctrl + `] ，粘贴如下代码，回车      
 
+		{% highlight python %}
+
+		Sublime Text2:
+		
         import urllib.request,os; pf = 'Package Control.sublime-package'; ipp= sublime.installed_packages_path(); urllib.request.install_opener(urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
+		
+		SublimeText3:
+		import urllib.request,os;pf = 'Package Control.sublime-package';ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) );open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
 
-
-
+		{% endhighlight %}
 添加插件 
 ----------------------
 
