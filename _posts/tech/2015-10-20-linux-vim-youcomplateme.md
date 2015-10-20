@@ -1,9 +1,10 @@
 ---
 layout: post  
-title: Vim安装YouComplateMe
-city: 北京   
+title: Vim安装YouComplateMe  
+city: 北京  
 tags: [tech,vim]  
 ---
+
 
 
 插件安装
@@ -16,6 +17,7 @@ tags: [tech,vim]
 			vim ~/.vimrc添加插件
 			Plugin 'Valloric/YouCompleteMe'
 			在任意打开vim中，执行命令行:BundleInstall
+
 		{% endhighlight %}	
 
 + 安装顺序
@@ -34,7 +36,7 @@ tags: [tech,vim]
 		7. cd ../YouCompleteMe 
 		8. ./install.py --clang-completer
 		
-		{% endhightlight %}
+		{% endhighlight %}
 
 
 
