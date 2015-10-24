@@ -11,18 +11,19 @@ city: 北京
 ================
 + 插件管理
 	
-		{% highlight c %}
+	{% highlight c %}
 			
+
 			假设已经安装vim 插件管理器vundle 
 			vim ~/.vimrc添加插件
 			Plugin 'Valloric/YouCompleteMe'
 			在任意打开vim中，执行命令行:BundleInstall
 
-		{% endhighlight %}	
+	{% endhighlight %}	
 
 + 安装顺序
 	
-		{% highlight c %}
+	{% highlight c %}
 		
 		git clone https://github.com/Valloric/YouCompleteMe
 		当出现这个提示时：
@@ -36,7 +37,7 @@ city: 北京
 		7. cd ../YouCompleteMe 
 		8. ./install.py --clang-completer
 		
-		{% endhighlight %}
+	{% endhighlight %}
 
 
 
