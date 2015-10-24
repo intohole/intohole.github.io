@@ -13,12 +13,11 @@ city: 北京
 	
 	{% highlight c %}
 			
-
 			假设已经安装vim 插件管理器vundle 
 			vim ~/.vimrc添加插件
-			Plugin 'Valloric/YouCompleteMe'
+			Plugin 'Valloric/YouCompleteMe
 			在任意打开vim中，执行命令行:BundleInstall
-
+		
 	{% endhighlight %}	
 
 + 安装顺序
