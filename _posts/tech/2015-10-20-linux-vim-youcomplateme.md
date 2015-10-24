@@ -1,8 +1,8 @@
 ---
-layout: post  
-title: Vim安装YouComplateMe  
-city: 北京  
+layout: post
 tags: [tech,vim]  
+title: Vim安装YouComplateMe
+city: 北京
 ---
 
 
@@ -37,18 +37,6 @@ tags: [tech,vim]
 		8. ./install.py --clang-completer
 		
 		{% endhighlight %}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

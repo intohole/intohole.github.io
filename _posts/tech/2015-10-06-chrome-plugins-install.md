@@ -19,8 +19,6 @@ chrome插件推荐集合
 	- 可以从F12中，找到它的影子，可以帮你用xpath找到你想要的；数据处理有帮助
 + [xpath helper]()
 	- 如果你会xpath，可以筛选你想要的
-+ [有道智能翻译2.0美化版]()
-	- 感觉有bug ， 不过真的很好用，可以选择好几种模式，让你读懂页面英文
 + [FaWave(发微)]()
 	- chrome简版微博，上班无聊的时候打开一下
 + [Firebug]()
@@ -33,3 +31,7 @@ chrome插件推荐集合
 	- 翻墙好工具啊
 + [One Tab]()
 	- 节省chrome资源利器，让你浏览器tab变的很干净
++ [有道智能翻译](https://chrome.google.com/webstore/detail/%E6%9C%89%E9%81%93%E6%99%BA%E8%83%BD%E7%BF%BB%E8%AF%91/fcihnniakiicgonogcieldhhjbgpnjpj/related)
+	- 很好用的一个全文翻译工具，而且不用翻墙，支持国货
++ [Google mail Checker](https://chrome.google.com/webstore/detail/google-mail-checker/mihcahmgecmbnbcchbopgniflfhgnkff)
+	- gmail客户端，打开后会跳转到gmail页面，还有未读邮件个数提供
