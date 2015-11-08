@@ -11,7 +11,7 @@ city: 北京
 ================
 + 插件管理
 	
-	{% highlight c %}
+	{% highlight python %}
 			
 			假设已经安装vim 插件管理器vundle 
 			vim ~/.vimrc添加插件
@@ -22,7 +22,7 @@ city: 北京
 
 + 安装顺序
 	
-	{% highlight c %}
+	{% highlight python %}
 		
 		git clone https://github.com/Valloric/YouCompleteMe
 		当出现这个提示时：
@@ -39,6 +39,30 @@ city: 北京
 	{% endhighlight %}
 
 
++ 我的.vimrc设置
+
+	{% highlight python %}
+
+		set ts=4
+		set expandtab
+		set nocompatible
+		filetype off
+		set rtp+=~/.vim/bundle/Vundle.vim
+		call vundle#rc()
+		Plugin 'gmarik/Vundle.vim' " let Vundle manage Vundle
+		Plugin 'scrooloose/nerdtree'
+		Plugin 'majutsushi/tagbar'
+		Plugin 'klen/python-mode'
+		Plugin 'wesleyche/SrcExpl'
+		Plugin 'Valloric/YouCompleteMe'
+
+		filetype plugin indent on
+		syntax on
+		nmap <silent> <F4> :TagbarToggle<CR>
+		let g:tagbar_ctags_bin='/usr/bin/ctags'
+
+	{% endhighlight %}
+
 
 参考
 -------------
@@ -46,3 +70,4 @@ city: 北京
 + [ycmd](https://github.com/Valloric/ycmd)
 + [cmake3.4](https://cmake.org/download/)
 + [Vim自动补全神器：YouCompleteMe](http://blog.jobbole.com/58978/)
++ [Vim自动补全神器：YouCompleteMe | 重点文章](http://blog.jobbole.com/58978/)
