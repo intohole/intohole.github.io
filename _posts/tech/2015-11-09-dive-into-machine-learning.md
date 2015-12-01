@@ -73,7 +73,7 @@ Talk machines
 
 从玩中学习
 ------------
-从IPython笔记中挑选一到两个,玩耍一下！
+从IPython笔记中挑选一到两个,玩耍一下！   
 + 在一堆标记号脸上做人脸识别
 + 从灾难中机器学习：使用Titanic数据，分析和可视化技术，用演示基本模型。展示一些监督学习例子。
 + 预测选举：复制Nate Silver为纽约时代杂志对2012年美国总统选举的预测。
@@ -98,9 +98,15 @@ Talk machines
 
 推荐课程
 ------------
-### [教授Andrew Ng的机器学习在线课程](https://www.coursera.org/learn/machine-learning) ###,这是一个免费的在线教程，我经常推荐,并且是一个重点 。    
+[ 教授Andrew Ng的机器学习在线课程 ](https://www.coursera.org/learn/machine-learning) 这是一个免费的在线教程，我经常推荐,并且是一个重点 。    
+创建一个玩具工程，去运用你学习到的知识，是很有帮助的。你可以使用一个[杰出的数据集](https://github.com/caesar0301/awesome-public-datasets).还有记住，Ipython笔记是你学习的伴侣。
 
+还有，[Elements of Statistical Learning(统计学习元素)](http://statweb.stanford.edu/~tibs/ElemStatLearn/)经常出现，但是它通常作为一个参考的援引，而不是作为一个介绍。它是免费的，可以下载下来或者弄成标签页。
 
+其它课程
+--------
+下面是我推荐一些其它在线教程。（机器学习，数据科学和其它相关的主题）
++ [机器学习](https://www.coursera.org/course/machlearning)由 华盛顿大学的Pedro Domingos教授; 前面介绍了Domingos教授论文“[A Few Useful Things to Know About Machine Learning](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)”(谢谢Hacker News 论文工作)
 
 
 
