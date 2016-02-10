@@ -73,10 +73,10 @@ Talk machines
 
 从玩中学习
 ------------
-从IPython笔记中挑选一到两个,玩耍一下！   
-+ 在一堆标记号脸上做人脸识别
-+ 从灾难中机器学习：使用Titanic数据，分析和可视化技术，用演示基本模型。展示一些监督学习例子。
-+ 预测选举：复制Nate Silver为纽约时代杂志对2012年美国总统选举的预测。
+从IPython笔记中挑选一到两个,玩耍一下！     
++ 在一堆标记号脸上做人脸识别   
++ 从灾难中机器学习：使用Titanic数据，分析和可视化技术，用演示基本模型。展示一些监督学习例子。  
++ 预测选举：复制Nate Silver为纽约时代杂志对2012年美国总统选举的预测。   
 + 一个机器学习笔记的例子:"我们正在为一家创业公司工作，这家公司想用手机自动识别拍照花卉类别,我们根据对数据的理解，创建一个拥有四个关于花度量（花萼长度，花萼的宽度，花瓣的长度，花瓣的宽度）的机器学习demo，通过这四维属性，识别花的种类"
 + 点击安全的"数据hacking"系列（感谢[hummus!](https://github.com/hummus)）
 	+ 检测自动生成主域
@@ -99,6 +99,8 @@ Talk machines
 推荐课程
 ------------
 [ 教授Andrew Ng的机器学习在线课程 ](https://www.coursera.org/learn/machine-learning) 这是一个免费的在线教程，我经常推荐,并且是一个重点 。    
+
+
 创建一个玩具工程，去运用你学习到的知识，是很有帮助的。你可以使用一个[杰出的数据集](https://github.com/caesar0301/awesome-public-datasets).还有记住，Ipython笔记是你学习的伴侣。
 
 还有，[Elements of Statistical Learning(统计学习元素)](http://statweb.stanford.edu/~tibs/ElemStatLearn/)经常出现，但是它通常作为一个参考的援引，而不是作为一个介绍。它是免费的，可以下载下来或者弄成标签页。
@@ -107,6 +109,9 @@ Talk machines
 --------
 下面是我推荐一些其它在线教程。（机器学习，数据科学和其它相关的主题）
 + [机器学习](https://www.coursera.org/course/machlearning)由 华盛顿大学的Pedro Domingos教授; 前面介绍了Domingos教授论文“[A Few Useful Things to Know About Machine Learning](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)”(谢谢Hacker News 论文工作)
++ 数据科学课程
+	+ [实用的数据科学](http://radimrehurek.com/data_science_python/)
+	+ [学习数据科学](http://learnds.com/)
 
 
 
