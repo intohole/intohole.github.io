@@ -41,14 +41,15 @@ Word2Vec是神奇的东西。总之，它能从一个文档集中，将文档中
 ------------
 我们不能直接使用康奈尔大学的电影原始数据评论。相反，我们要将他们转换为小写字母，并移除标点符号。我是通过bash完成这件事情的，你也可以通过Python，JS，或者你喜欢的脚本语言，做到这一点很容易。这一步是微不足道的。
 
-其结果是有5个文件：
+其结果是有5个文件：       
 
-test-neg.txt：从试验数据12500消极电影评论
-test-pos.txt：从试验数据12500积极电影评论
-train-neg.txt：从训练数据12500积极电影评论
-train-pos.txt：从训练数据12500消极电影评论
-train-unsup.txt：50000未标记的电影评论
-的审查每个格式应为这样的：
++ test-neg.txt：从试验数据12500消极电影评论   
++ test-pos.txt：从试验数据12500积极电影评论
++ train-neg.txt：从训练数据12500积极电影评论
++ train-pos.txt：从训练数据12500消极电影评论
++ train-unsup.txt：50000未标记的电影评论
+
+每个的审查每个格式应为这样的：
 
 ```
 once again mr costner has dragged out a movie for far longer than necessary aside from the terrific sea rescue sequences of which there are very few i just did not care about any of the characters most of us have ghosts in the closet and costner s character are realized early on and then forgotten until much later by which time i did not care the character we should really care about is a very cocky overconfident ashton kutcher the problem is he comes off as kid who thinks he s better than anyone else around him and shows no signs of a cluttered closet his only obstacle appears to be winning over costner finally when we are well past the half way point of this stinker costner tells us all about kutcher s ghosts we are told why kutcher is driven to be the best with no prior inkling or foreshadowing no magic here it was all i could do to keep from turning it off an hour in
@@ -125,6 +126,8 @@ sentences = LabeledLineSentence(sources)
 ---------------
 构建词汇表
 ---------------
+
+
 Doc2Vec要求我们建立的词汇表（简单的过滤所有词，并且做了一个基础的计数）。所以，我们要塞入所有句子。model.build_vocab接受LabeledLineSentence数组，因此我们的to_array功能的LabeledLineSentences类。
 
 如果你对参数好奇，可以阅读Word2Vec文档。其它的，这里是一个简要介绍：
