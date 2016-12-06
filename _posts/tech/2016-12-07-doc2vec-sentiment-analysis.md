@@ -7,9 +7,9 @@ city: 杭州
 
 使用Doc2Vec情感分析
 ======================
-Word2Vec是涂料。总之，它从一个文档集中，将这些文档中的词转换为向量。你会问这些向量有什么特别吗？是的，一些语义相近的词会离彼此近一些。更多的是，这些向量表示，我们如何使用这些单词。例如，v_man - v_woman约等于v_king - v_queen，说明“男人相对于女人类似皇帝对应女王”的关系。这个过程中，NLP魔术，被称为词编码。这种替代方法得到了广泛应用。Doc2Vec不是指代词，而是一个句子或者一篇文章，这样使得它更加杰出。想象一下，用固定长度向量代表整个句子，并能运行所有标准的分类算法。是不是很神奇呢？
+Word2Vec是神奇的东西。总之，它能从一个文档集中，将文档中的词转换为向量。你会问这些向量有什么特别吗？是的，一些语义相近的词会离彼此近一些。更多的是，这些向量表示，我们如何使用这些单词。例如，v_man - v_woman约等于v_king - v_queen，说明“男人相对于女人类似皇帝对应女王”。这个过程中，自然语言处理魔术，被称为词编码。这种替代方法得到了广泛应用。Doc2Vec不是指代词，而是一个句子或者一篇文章，这正是它杰出的方面。想象一下，用固定长度向量代表整个句子，并能运行所有标准的分类算法。这样做是不是很神奇呢？
 
-然而，Word2Vec文档不友好。C 代码阅读不友好（700行代码是高度优化的，有很多Code Trick）。我个人花了大量的时间解开Doc2Vec并撞毁〜50％的精度，由于实施错误。本教程的目的是帮助其他用户使用Word2Vec为自己的研究取得进展。我们使用Word2Vec进行情感分析,在康奈尔大学的IMDB电影评论文集（http://www.cs.cornell.edu/people/pabo/movie-review-data/）进行分类。
+然而，Word2Vec文档不友好。C 代码阅读起来费力（700行代码是高度优化的，有很多编码技巧）。我个人花了大量的时间解决Doc2Vec由于错误引起大约50%精度错误。本教程的目的是帮助其他用户使用Word2Vec在自己的研究上取得进展。我们在康奈尔大学的IMDB电影评论文集，使用Word2Vec进行情感分析。（http://www.cs.cornell.edu/people/pabo/movie-review-data/）进行分类。
 
 在这个演示中使用的源代码可以在[https://github.com/linanqiu/word2vec-sentiments](https://github.com/linanqiu/word2vec-sentiments)找到
 
@@ -19,7 +19,7 @@ Word2Vec是涂料。总之，它从一个文档集中，将这些文档中的词
 模块
 ------------
 
-我们使用gensim，因为gensim有一个更可读的实施Word2Vec（和Doc2Vec）的。祝福那些家伙。我们还使用numpy了一般的数组操作，并sklearn为Logistic回归分类。       
+我们使用gensim，因为gensim有一个更可读的Word2Vec（Doc2Vec）的实现。幸亏那些家伙。我们还使用了numpy数组操作和用sklearn逻辑回归作为分类器。       
 
 ```
     # gensim modules
@@ -39,7 +39,7 @@ Word2Vec是涂料。总之，它从一个文档集中，将这些文档中的词
 
 输入格式
 ------------
-我们不能直接使用康奈尔大学的电影评论数据存储库的原始评论。相反，我们通过转换字母为小写，并移除标点符号。我通过bash，你可以通过Python，JS，或者你喜欢的脚本语言，做到这一点很容易。这一步是微不足道的。
+我们不能直接使用康奈尔大学的电影原始数据评论。相反，我们要将他们转换为小写字母，并移除标点符号。我是通过bash完成这件事情的，你也可以通过Python，JS，或者你喜欢的脚本语言，做到这一点很容易。这一步是微不足道的。
 
 其结果是有5个文件：
 
@@ -57,13 +57,13 @@ this is an example of why the majority of action films are the same generic and 
 
 上面包含了两种极性(积极/消极)电影评论,每个都独立占据一行，是的，每个文档都要在一行，并且用换行符分割。这是非常重要的，因为我们通过换行符解析出每个句子(文档)；
 
-注入数据到Doc2Vec
+数据塞入到Doc2Vec
 ---------------------
-Doc2Vec（gensim实现Doc2Vec算法）在词编码上做了一个伟大的工作，但是一个可怕的工作是读取多文件的时候。它的LabeledLineSentence类，只返回LabeledSentence,这个是gensim.models.doc2vec用来代表一个单句。为什么“标记”词？那么，这个就是Doc2Vec和Word2Vec的不同之处。
+Doc2Vec（gensim实现Doc2Vec算法）在词编码上做了一个伟大的工作，但是当它遇到多文件的时候，是比较头疼的事情。它的LabeledLineSentence原生类，只返回LabeledSentence,这是gensim.models.doc2vec用来代表一个单句的。为什么“标记”词？这个就是Doc2Vec和Word2Vec的不同之处。
 
-Word2Vec只是一个字转换成向量。
+Word2Vec只是一个词转换成向量。
 
-Doc2Vec不仅仅这样做，而且还要江一个句子转换为一个向量。要做到这一点，把句子到标记作为一个特殊的词，而且在这些特殊的词上做了一些手段，因此，这些特殊的词是一个句子的标记。
+Doc2Vec不仅仅这样做，而且还要将一个句子转换为一个向量。要做到这一点，把句子到标记作为一个特殊的词，并且在这个特殊的词中采用一些特殊手段。因此，这些特殊的词是一个句子的标记。
 
 因此，我们必须将句子转化成
 
@@ -109,13 +109,17 @@ class LabeledLineSentence(object):
         return self.sentences
 ```
 
-现在，我们可以将多个文件塞入到  LabeledLineSentence 。正如我们前面提到的，LabeledLineSentence这个只简单接入一个词典类型，键是文件名和一个特殊的前缀，这个前缀一定要不同，这是为了标记每个句子的不同来源（训练数据集不同）
+现在，我们可以将多个文件塞入到  LabeledLineSentence 。正如我们前面提到的，LabeledLineSentence接受一个简单的词典类型，键是文件名和值一个特殊的前缀，这个前缀一定要不同，这是为了标记每个句子的不同来源（训练数据集不同）
 
-我们将前缀加上了一个计数器，这样每个句子都有了不同的标记。
+我们将前缀加上了一个计数器，这样就使每个句子都有了不同的标记。       
+
+
 ```
 sources = {'test-neg.txt':'TEST_NEG', 'test-pos.txt':'TEST_POS', 'train-neg.txt':'TRAIN_NEG', 'train-pos.txt':'TRAIN_POS', 'train-unsup.txt':'TRAIN_UNS'}
 sentences = LabeledLineSentence(sources)
 ```
+
+
 
 模型
 ---------------
@@ -181,7 +185,7 @@ model.most_similar('good')
 
 我们可以看下模型中到底含有什么。这是模型中一个词和句子的向量。我们可以通过访问model.syn0（对你们中间那些极客，syn0是浅神经网络的输出层）。但是，我们对单个词的向量没有兴趣，我们更想要的是一个句子的向量。
 
-这个是我们一个：
+这个是我们一个消极的训练样本句子向量样本：
 
 ```
 model[ 'TRAIN_NEG_0' ]
