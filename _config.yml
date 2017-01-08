@@ -27,6 +27,9 @@ indexs:
  - site: 机器学习
    url: ml.html
    tag: ml
+ - site: 前端开发   
+   url: frontend.html
+   tag: web 
 page_404:
  refresh_time: 7
  btns:
