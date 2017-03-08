@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  阅读的论文 
-tags: [tech,ml]
+tags: [ml]
 city: 杭州 
 ---
 
