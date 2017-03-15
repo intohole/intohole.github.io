@@ -11,7 +11,7 @@ city: 杭州
 + [learning from imbalance data](http://www.ele.uri.edu/faculty/he/PDFfiles/ImbalancedLearning.pdf)
 + [Ad Click Prediction: a View from the Trenches](https://www.eecs.tufts.edu/~dsculley/papers/ad-click-prediction.pdf)
 + [A Few Useful Things to Know about Machine Learning](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)
-
++ [Learning from the best](http://blog.kaggle.com/2014/08/01/learning-from-the-best/)
 
 网页处理
 --------
