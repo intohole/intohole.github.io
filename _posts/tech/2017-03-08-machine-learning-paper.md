@@ -14,7 +14,10 @@ city: 杭州
 + [Learning from the best](http://blog.kaggle.com/2014/08/01/learning-from-the-best/)
 + [Predicting Positive and Negative Links in Online Social Networks](https://www.cs.cornell.edu/home/kleinber/www10-signed.pdf)
 + [Practical Lessons from Predicting Clicks on Ads at Facebook](https://pdfs.semanticscholar.org/daf9/ed5dc6c6bad5367d7fd8561527da30e9b8dd.pdf)  
-+ [Cross-Feature Analysis for Detecting Ad-Hoc Routing Anomalies](http://wenke.gtisc.gatech.edu/papers/icdcs.pdf)
++ [Cross-Feature Analysis for Detecting Ad-Hoc Routing Anomalies](http://wenke.gtisc.gatech.edu/papers/icdcs.pdf)      
+
+
+
 网页处理
 --------
 + [基于行块分布函数的通用网页正文抽取](https://open.cplusplus.me/DevelopmentDocs/Based-on-the-distribution-function-of-the-common-line-block-web-content-extraction.pdf)
@@ -23,3 +26,5 @@ city: 杭州
 -------
 + [TextRank: Bringing Order into Texts](https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf)
 + [Extracting Product Features and Opinions from Reviews](https://turing.cs.washington.edu/papers/emnlp05_opine.pdf)
++ [Distributed Representations of Sentences and Documents](https://cs.stanford.edu/~quocle/paragraph_vector.pdf)
++ [使用setence2vec方法](http://stackoverflow.com/questions/29760935/how-to-get-vector-for-a-sentence-from-the-word2vec-of-tokens-in-sentence)
