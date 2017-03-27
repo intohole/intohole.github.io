@@ -15,7 +15,7 @@ city: 杭州
 + [Predicting Positive and Negative Links in Online Social Networks](https://www.cs.cornell.edu/home/kleinber/www10-signed.pdf)
 + [Practical Lessons from Predicting Clicks on Ads at Facebook](https://pdfs.semanticscholar.org/daf9/ed5dc6c6bad5367d7fd8561527da30e9b8dd.pdf)  
 + [Cross-Feature Analysis for Detecting Ad-Hoc Routing Anomalies](http://wenke.gtisc.gatech.edu/papers/icdcs.pdf)      
-
++ [Predicting Clicks:Estimating the Click-Through Rate for New Ads](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/predictingclicks.pdf)
 
 
 网页处理
