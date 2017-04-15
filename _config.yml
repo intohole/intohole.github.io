@@ -30,6 +30,9 @@ indexs:
  - site: 前端开发   
    url: frontend.html
    tag: web 
+ - site: 开发语言
+   url: language.html
+   tag: lan
 page_404:
  refresh_time: 7
  btns:
