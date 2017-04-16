@@ -16,12 +16,12 @@ page_limit: 10
 indexs:
  - site: 首页
    url: index.html
- - site: 开发语言
-   url: language.html
-   tag: lan
  - site: 机器学习
    url: ml.html
    tag: ml
+ - site: 自然语言
+   url: nlp.html
+   tag: nlp
  - site: 编程
    url: tech.html
    tag: tech
