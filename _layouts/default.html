@@ -61,7 +61,7 @@
 <body>
 	
 <div class="site">
-  <div><pre class="nav margin-for-mobile">[{% for link in site.indexs %}{% if forloop.last  %}"<a href='/{{ link.url }}' >{{ link.site }}</a>"{% else %}"<a href='/{{ link.url }}' >{{ link.site }}</a>",{% endif %}{%  endfor %}]</pre></div>
+  <div><pre class="nav margin-for-mobile">[{% for link in site.indexs %}{% if forloop.last  %}"<a class="atop" href='/{{ link.url }}' >{{ link.site }}</a>"{% else %}"<a href='/{{ link.url }}' >{{ link.site }}</a>",{% endif %}{%  endfor %}]</pre></div>
   <br/>
   {% if page.page_type %}{% for link in site.indexs %}{% if link.tag == page.page_type %}
   <div id="home">
