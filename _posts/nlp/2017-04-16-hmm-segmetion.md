@@ -1,5 +1,5 @@
 ---
-layout: default 
+layout: post 
 title: HMM分词实现思路 
 tags: [nlp]
 city: 杭州 
