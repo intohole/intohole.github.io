@@ -8,7 +8,7 @@ city: 杭州
 
 HMM背景知识
 ===================
-!(维特比算法)[https://en.wikipedia.org/wiki/File:Viterbi_animated_demo.gif]
+![维特比算](https://en.wikipedia.org/wiki/File:Viterbi_animated_demo.gif)
 
 + 状态：隐藏状态、观察状态
     + 举例说明：燕子低飞，天要下雨；燕子低飞，我们可以从肉眼直接观察得知的，天要下雨是我们根据这个规律知道内在状态；看到a发生了，那么b很有可能发生
