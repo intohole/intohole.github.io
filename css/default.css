@@ -355,10 +355,15 @@ footer p {
 .atop {
 	color:#0390ff;
 }
-
+a .fposturl {
+	color:#088ae0;
+}
+a .posturl {
+  color: #0D0D0D;
+}
 a {
   text-decoration: none;
-  color: #0D0D0D;
+  color: #271af3;
   text-shadow: none;
 }
 
