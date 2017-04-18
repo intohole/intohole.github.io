@@ -16,6 +16,9 @@ page_limit: 10
 indexs:
  - site: 首页
    url: index.html
+ - site: 开源 
+   url: open.html
+   tag: open
  - site: 机器学习
    url: ml.html
    tag: ml
@@ -34,9 +37,6 @@ indexs:
  - site: 生活
    url: life.html
    tag: life
- - site: 开源 
-   url: open.html
-   tag: open 
  - site: 关于me
    url: resume.html
 page_404:
