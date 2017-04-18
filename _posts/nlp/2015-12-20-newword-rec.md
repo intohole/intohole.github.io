@@ -1,6 +1,6 @@
 ---
 layout: post  
-tags: [ml,nlp]   
+tags: [nlp]   
 title:	新词发现    
 city: 北京
 ---
