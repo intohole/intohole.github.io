@@ -1,6 +1,6 @@
 ---
 layout: post  
-tags: [ml,nlp]   
+tags: [nlp]   
 title:	基于kmeans聚类自动摘要提取方法
 city: 杭州
 ---

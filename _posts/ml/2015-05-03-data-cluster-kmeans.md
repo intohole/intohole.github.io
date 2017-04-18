@@ -2,7 +2,7 @@
 layout: post
 title: 聚类算法 Kmeans
 city: 北京
-tags: [tech,datamining]
+tags: [ml]
 ---
 
 ＫMeans　聚类算法

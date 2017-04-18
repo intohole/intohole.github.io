@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 归一化
-tags: [tech,数据挖掘]
+tags: [ml]
 ---
 归一化
 =========
