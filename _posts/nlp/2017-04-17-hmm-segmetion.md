@@ -32,4 +32,11 @@ HMM背景知识
    + 我们需要一个事先分好词的语料，我们通过程序将每个字处理上面的格式
    + 通过计算出开始状态概率矩阵，其实就是统计每个字出现在开头对应隐藏状态比率；对应隐藏状态与下个隐藏状态之间概率值，统计数字就可以；统计出观察状态（某个字）对应的隐藏状态（MESW）概率；
    + 统计出这个矩阵+维特比算法，就可以将文章进行分词；
- 
+
+
+参考信息
+=========== 
++ [hmm实现](https://github.com/intohole/moodstyle/blob/master/moodstyle/Hmm.py)
++ [分词实现](https://github.com/intohole/xsegment/blob/master/xsegment/hmm.py)
++ [维基维特比](https://zh.wikipedia.org/wiki/%E7%BB%B4%E7%89%B9%E6%AF%94%E7%AE%97%E6%B3%95)
++ [Hmm分词](http://www.52nlp.cn/itenyh%E7%89%88-%E7%94%A8hmm%E5%81%9A%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D%E4%B8%80%EF%BC%9A%E5%BA%8F)
