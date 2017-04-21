@@ -16,6 +16,9 @@ page_limit: 10
 indexs:
  - site: 首页
    url: index.html
+ - site: 我 
+   url: my.html
+   tag: my
  - site: 开源 
    url: open.html
    tag: open
