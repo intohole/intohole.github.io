@@ -1,6 +1,6 @@
 ---
 layout: post  
-tags: [lan,go]   
+tags: [lan]   
 title:	Go学习目录整理    
 city: 北京 
 ---

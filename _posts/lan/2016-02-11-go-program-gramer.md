@@ -2,7 +2,7 @@
 layout: post  
 title: go语法   
 city: 铁力   
-tags: [tech]  
+tags: [lan]  
 ---
 
 ### 以下都为我现有基础知识面来说的 ###
