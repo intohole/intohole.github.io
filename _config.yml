@@ -4,6 +4,7 @@ comments:
         short_name: intohole
 title: 布衣客
 safe: false
+markdown: kramdown
 highlighter: pygments
 redirects: yes
 site_domain: http://www.buyiker.com
