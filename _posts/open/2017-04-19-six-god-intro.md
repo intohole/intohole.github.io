@@ -15,7 +15,7 @@ city: 杭州
 + 优点：线性时间、不建DOM树、与HTML标签无关
 + [sixgod](https://github.com/intohole/sixgod)      
 
-{%hightlight python%}		
+{%hightlighter python%}		
 		from vampire.htmlextract import HtmlExtract
 		import requests
 		html = requests.get('http://www.fabao365.com/fangchan/167193/')  
