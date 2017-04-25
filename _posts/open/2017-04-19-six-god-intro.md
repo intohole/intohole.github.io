@@ -19,7 +19,7 @@ city: 杭州
 		from vampire.htmlextract import HtmlExtract
 		import requests
 		html = requests.get('http://www.fabao365.com/fangchan/167193/')  
-    	html.encoding="utf-8"
+		html.encoding="utf-8"
 		ex = HtmlExtract()
 		print ex.get_text(html.text)
 {% endhighlight %}

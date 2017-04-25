@@ -83,9 +83,10 @@ xsegment自然语言工具
 	
 
 
-	from xsegment.wordsim import WordSim
-	wordsim = WordSim()
-	wordsim.word_sim("你" , "我" ， desc = True) #返回词之间距离数组 ， 按照降序排列 ， 升序 desc = False
+		from xsegment.wordsim import WordSim
+		wordsim = WordSim()
+		wordsim.word_sim("你" , "我" ， desc = True) #返回词之间距离数组 ， 按照降序排列 ， 升序 desc = False
+
 
 自动摘要
 -------------
@@ -95,11 +96,11 @@ xsegment自然语言工具
 
 
 
-	from xsegment.summary import SimpleSummary
-	from xsegment.summary import TextRankSummary
-	summary = SimpleSummary() #TextRankSummary()
-	summary.summary("文章内容" , "标题" ) #返回摘要
-
+		from xsegment.summary import SimpleSummary
+		from xsegment.summary import TextRankSummary
+		summary = SimpleSummary() #TextRankSummary()
+		summary.summary("文章内容" , "标题" ) #返回摘要
+		
 Simhash文本相似计算
 ------------
 
