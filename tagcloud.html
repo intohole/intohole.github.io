@@ -17,7 +17,8 @@ title: 布衣客
            		{% for post in site.tags.[tag.tag]  %} 
 					word_array.push({text:post.title},link:post.url,weight:9})
             	{% endfor %}
-    	{% endif %}
+    		{% endif %}
+		{% endfor %}
   
       	$(function() {
         	$("#J_Tagcloud").jQCloud(word_array);
