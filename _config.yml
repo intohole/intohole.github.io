@@ -43,6 +43,8 @@ indexs:
    tag: life
  - site: 关于me
    url: resume.html
+ - site: 词标签
+   url: tagcloud.html
 page_404:
  refresh_time: 7
  btns:

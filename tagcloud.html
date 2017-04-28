@@ -1,0 +1,28 @@
+---
+layout: default
+title: 布衣客
+---
+
+<link rel="stylesheet" type="text/css" href="css/jqcloud.css" />
+<script type="text/javascript" src="js/jqcloud-1.0.4.js"></script>
+<script type="text/javascript">
+      	var word_array = new Array();
+	 	{% for tag in site.indexs %}
+		 	{% if tag.tag %}
+				word_array.push({text:tag.site,link:tag.url,weight:15})
+         	{% endif %}	
+	  	{% endfor %}
+	    {% for tag in site.indexs %}
+    		{% if tag.tag %}
+           		{% for post in site.tags.[tag.tag]  %} 
+					word_array.push({text:post.title},link:post.url,weight:9})
+            	{% endfor %}
+    	{% endif %}
+  
+      	$(function() {
+        	$("#J_Tagcloud").jQCloud(word_array);
+     	 });
+</script>
+<div id="home">
+	<div id="J_Tagcloud"></div>
+</div>
