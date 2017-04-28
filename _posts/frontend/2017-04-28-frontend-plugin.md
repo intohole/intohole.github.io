@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Java 单例模式
+title: 前端组件
 city: 杭州 
 tags: [web]
 ---
