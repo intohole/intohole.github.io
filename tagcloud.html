@@ -7,10 +7,14 @@ title: 布衣客
 <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
 <script type="text/javascript" src="js/jqcloud-1.0.4.js"></script>
 <script type="text/javascript">
+
+		function rnd(start, end){
+    		return Math.floor(Math.random() * (end - start) + start);
+		}
       	var word_array = new Array();
 	 	{% for tag in site.indexs %}
 		 	{% if tag.tag %}
-				word_array.push({text: "{{tag.site}}" ,link: "{{tag.url}}" ,weight: 15})
+				word_array.push({text: "{{tag.site}}" ,link: "{{tag.url}}" ,weight: 16})
          	{% endif %}	
 	  	{% endfor %}
 	    {% for tag in site.indexs %}
@@ -22,6 +26,9 @@ title: 布衣客
 		{% endfor %}
   
       	$(function() {
+			for(item in word_array){
+				item.weight = item.weight + rnd(-3,3);
+			}
         	$("#J_Tagcloud").jQCloud(word_array);
      	 });
 </script>
