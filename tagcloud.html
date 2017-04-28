@@ -9,13 +9,13 @@ title: 布衣客
       	var word_array = new Array();
 	 	{% for tag in site.indexs %}
 		 	{% if tag.tag %}
-				word_array.push({text:tag.site,link:tag.url,weight:15})
+				word_array.push({text: {{tag.site}} ,link: {{tag.url}},weight: 15})
          	{% endif %}	
 	  	{% endfor %}
 	    {% for tag in site.indexs %}
     		{% if tag.tag %}
            		{% for post in site.tags.[tag.tag]  %} 
-					word_array.push({text:post.title},link:post.url,weight:9})
+					word_array.push({text:{{post.title}},link:{{post.url}},weight:9})
             	{% endfor %}
     		{% endif %}
 		{% endfor %}
