@@ -27,7 +27,7 @@ title: 布衣客
   
       	$(function() {
 			for(item in word_array){
-				item.weight = item.weight + rnd(-3,3);
+				word_array[item].weight = word_array[item].weight + rnd(-4,4)
 			}
         	$("#J_Tagcloud").jQCloud(word_array);
      	 });
