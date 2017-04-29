@@ -20,6 +20,7 @@ indexs:
  - site: 我 
    url: my.html
    tag: my
+   weight: 17
  - site: 开源 
    url: open.html
    tag: open

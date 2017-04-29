@@ -43,4 +43,30 @@ tags: [web]
 		    <div id="example" style="width: 550px; height: 350px;"></div>
 		  </body>
 		</html>
+
+
+
++ [Chosen selector超帅利器](https://github.com/harvesthq/chosen)			
+     + [下载地址](https://github.com/harvesthq/chosen/releases/)  
+
+
+
 		
+		 
+		
+		<select id="J_Selector" class="chosen-select" style="width: 30%;">
+
+
+		  <script type="text/javascript">
+				// 单选初始化
+				jQuery("#J_Selector").chosen({no_results_txt:"没有结果的时候提示信息!"})
+				// 多选初始化	
+				jQuery("#J_Selector").chosen({})
+				// 更新 
+                $("#J_Selector").trigger("chosen:updated");
+		  </script>
+
+
+
+
++ [echart.js 图形可视化](https://github.com/ecomfe/echarts)
