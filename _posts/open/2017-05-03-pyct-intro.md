@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: [open]
-title: [pyct] python crontab实现	
+title: PyCt python crontab实现	
 city: 杭州 
 ---
 
