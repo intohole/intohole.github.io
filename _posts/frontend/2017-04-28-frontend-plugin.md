@@ -54,19 +54,21 @@ tags: [web]
 		
 		 
 		
-		<select id="J_Selector" class="chosen-select" style="width: 30%;">
+			<select id="J_Selector" class="chosen-select" style="width: 30%;">
 
 
-		  <script type="text/javascript">
+		  	<script type="text/javascript">
 				// 单选初始化
 				jQuery("#J_Selector").chosen({no_results_txt:"没有结果的时候提示信息!"})
 				// 多选初始化	
 				jQuery("#J_Selector").chosen({})
 				// 更新 
                 $("#J_Selector").trigger("chosen:updated");
-		  </script>
+		  	</script>
 
 
 
 
 + [echart.js 图形可视化](https://github.com/ecomfe/echarts)
++ [jQuery Zoom.js](http://www.jacklmoore.com/zoom/)
+	- [github](https://github.com/jackmoore/zoom)
