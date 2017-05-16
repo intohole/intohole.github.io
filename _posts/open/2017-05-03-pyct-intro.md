@@ -14,15 +14,18 @@ city: 杭州
 + 支持crontab字符串的定时时间格式
 + 使用方法
 	
+```python
 	
-		from pyct.pyct import PyCt
-		c = PyCt()
-    		
-		def p(*argv , **kw):
-        	print "hi"
-				
-		c.add("* * * * *", p , *[] , **{}) #添加执行命令 ， 现在只支持python函数 , 函数形式类似于这种 def xxx(*argv , **kw):  
-		time.sleep(100) # 或者用c.join()
+from pyct.pyct import PyCt
+c = PyCt()
+	
+def p(*argv , **kw):
+	print "hi"
+		
+c.add("* * * * *", p , *[] , **{}) #添加执行命令 ， 现在只支持python函数 , 函数形式类似于这种 def xxx(*argv , **kw):  
+time.sleep(100) # 或者用c.join()
+
+```
 
 + 整个实现步骤
 	- crontab时间定义字符串的解析
