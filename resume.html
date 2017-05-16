@@ -1,19 +1,22 @@
 ---
 layout: default
-title: 介绍
+title: 简介
 ---
 
 <div id="home">
-    <ul class="posts">
+    <blockquote>
         {% if site.resume.Desc %}
             {% for desc in site.resume.Desc %}
-                <li>{{desc.info}}</li>
+                <p>{{desc.info}}</p>
             {% endfor %}
         {% endif %}
         {% if site.resume.Jobs %}
             {% for job in site.resume.Jobs %}
-                <li>{{job.type}} :<a href="{{job.url}}" target="_blank">@{{job.name}}</a></li>
+				<p>
+					<i class="fa fa-{{job.type}-square fa-lg}" aria-hidden="true"></i>
+					<span style="padding-left:5px;"><a href="{{job.url}}" target="_blank">{{job.name}}</a></span>	
+				</p>
             {% endfor %}
         {% endif %}
-    </ul>
+    </blockquote>
 </div>
