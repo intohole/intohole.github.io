@@ -1,6 +1,6 @@
 ---
 layout: post  
-tags: [ml,nlp]   
+tags: [nlp]   
 title:	基于Doc2Vec情感分析（翻译）
 city: 杭州
 ---

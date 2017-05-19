@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 一个简单的爬虫架构 
-tags: [tech]
+tags: [spider]
 city: 南京
 ---
 

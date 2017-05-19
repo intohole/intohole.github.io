@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [tech,algorithm]
+tags: [spider,algorithm]
 title: 布隆过滤器
 city: 南京
 ---

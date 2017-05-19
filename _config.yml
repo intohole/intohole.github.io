@@ -30,6 +30,9 @@ indexs:
  - site: 自然语言
    url: nlp.html
    tag: nlp
+ - site: 爬虫 
+   url: spider.html
+   tag: spider 
  - site: 编程
    url: tech.html
    tag: tech

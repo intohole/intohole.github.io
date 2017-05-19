@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java　Hashcode 
-tags: [tech,java]
+tags: [tech]
 city: 南京
 ---
 

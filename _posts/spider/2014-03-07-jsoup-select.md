@@ -2,7 +2,7 @@
 layout: post
 title: Jsoup select 选择器
 city: 北京
-tags: [tech,java]
+tags: [spider]
 ---
 
 Jsoup select 选择器
