@@ -17,15 +17,13 @@ city: 杭州
 + 更改\_config.yml文件选项
     + 请详细看[\_config.yml配置](https://github.com/intohole/intohole.github.com/blob/master/README.md)
 + 编写内容在\_post/ 目录下
+```markdown
+---
+layout: post
+tags: [你在_config.yml配置的标签]
+title: 标题 
+city: 城市 
+---
 
-	
-		---
-   		layout: post
-   		tags: [你在_config.yml配置的标签]
-   		title: 标题 
-   		city: 城市 
-   		---
-		
-		markdown编写网页内容
-
-
+markdown编写网页内容
+```
