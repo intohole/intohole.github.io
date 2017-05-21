@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  <<Redis 设计与实现>> 读后感 
+title:  &lt;&lt;Redis 设计与实现&gt;&gt; 读后感 
 tags: [tech]
 city: 杭州 
 ---
