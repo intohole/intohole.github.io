@@ -17,6 +17,8 @@ page_limit: 10
 indexs:
  - site: 首页
    url: index.html
+ - site: 词标签
+   url: tagcloud.html
  - site: 我 
    url: my.html
    tag: my
@@ -47,9 +49,6 @@ indexs:
    tag: life
  - site: 关于me
    url: resume.html
- - site: 词标签
-   url: tagcloud.html
-
 page_404:
  refresh_time: 7
  btns:
@@ -60,7 +59,7 @@ page_404:
 
 resume:
  Desc:
-   - info: "Java python shell c and etc... "
+   - info: "机器学习 自然语言处理 架构 前端  全栈工程师 为解决问题而努力，没有高大上的词汇，只有最平凡的词汇，用程序延伸自己的思想 etc ... "
 
  Jobs:
    -
