@@ -1,0 +1,18 @@
+---
+layout: post
+---
+
+<link rel="stylesheet" href="/css/zoom.css" typt="text/css">
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery.zoom.min.js"></script>
+
+
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		jQuery('#J_KG').zoom();	
+	});
+</script>
+
+<span class="zoom"  id='J_KG'>
+		<img src='/images/{{ post.kgimg }}'   alt="{{ post.kgtitle }}"/>
+</span>
