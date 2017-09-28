@@ -75,6 +75,7 @@ model.add(Dense(len(chars)))
 model.add(Activation('softmax'))
 
 # 优化方式
+# 参考连接 http://shuokay.com/2016/06/11/optimization/
 optimizer = RMSprop(lr=0.01)
 # 模型使用交叉熵损失函数
 model.compile(loss='categorical_crossentropy', optimizer=optimizer)
@@ -86,6 +87,7 @@ def sample(preds, temperature=1.0):
     preds = np.log(preds) / temperature
     exp_preds = np.exp(preds)
     preds = exp_preds / np.sum(exp_preds)
+    # 多项式绘制样本
     probas = np.random.multinomial(1, preds, 1)
     return np.argmax(probas)
 
@@ -134,3 +136,7 @@ for iteration in range(1, 60):
             sys.stdout.flush()
         print()
 ```
+参考文章
+------------
++ [keras lstm例子](https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py)
++ [卷积神经网络中的优化算法比较](http://shuokay.com/2016/06/11/optimization/)
