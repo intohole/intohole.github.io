@@ -64,18 +64,24 @@ y_test = keras.utils.to_categorical(y_test, num_classes)
 # 建立模型
 model = Sequential()
 # Conv2D
-# kernel_size 
+# filters = 32 32个卷积核
+# kernel_size 指定卷积窗口大小 
 # activation 激活函数
 
 model.add(Conv2D(32, kernel_size=(3, 3),
                  activation='relu',
                  input_shape=input_shape))
+# 64个卷积核
 model.add(Conv2D(64, (3, 3), activation='relu'))
+# 做pooling操作 2,2 -> 1
 model.add(MaxPooling2D(pool_size=(2, 2)))
+# dropout为了避免网络过拟合
 model.add(Dropout(0.25))
 model.add(Flatten())
+# 全联接
 model.add(Dense(128, activation='relu'))
 model.add(Dropout(0.5))
+# softmax多分类
 model.add(Dense(num_classes, activation='softmax'))
 # loss 损失函数 交叉熵
 # optimizer 优化函数 
