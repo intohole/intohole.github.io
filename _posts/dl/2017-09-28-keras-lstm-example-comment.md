@@ -6,6 +6,7 @@ title: keras LSTM例子注释
 ---
 
 ```python
+'''
 这是用Nietzsche的著作生成文本的例子代码。
 
 生成文本至少需要20轮迭代。
@@ -63,12 +64,19 @@ for i, sentence in enumerate(sentences):
 # 搭建lstm网络 
 print('Build model...')
 model = Sequential()
-# 
+# lstm 
+# input_shape -> (样本数量,窗口长度,输入向量长度) 
+#                样本数量可以不写或者None
+# 128 batch_size 每次训练多少条数据
 model.add(LSTM(128, input_shape=(maxlen, len(chars))))
+# Dense 全联接层
 model.add(Dense(len(chars)))
+# 使用softmax层，因为是多输出 
 model.add(Activation('softmax'))
 
+# 优化方式
 optimizer = RMSprop(lr=0.01)
+# 模型使用交叉熵损失函数
 model.compile(loss='categorical_crossentropy', optimizer=optimizer)
 
 
@@ -81,36 +89,44 @@ def sample(preds, temperature=1.0):
     probas = np.random.multinomial(1, preds, 1)
     return np.argmax(probas)
 
-# train the model, output generated text after each iteration
+# 训练模型，并在每次训练之后，输出模型 
 for iteration in range(1, 60):
     print()
     print('-' * 50)
     print('Iteration', iteration)
+    # 模型训练
+    # fit(输入)
     model.fit(X, y,
               batch_size=128,
               epochs=1)
-
+    # 随机 
     start_index = random.randint(0, len(text) - maxlen - 1)
 
     for diversity in [0.2, 0.5, 1.0, 1.2]:
         print()
         print('----- diversity:', diversity)
-
+        # 随机一个输入句子 ， 后面用于产出输入向量
         generated = ''
         sentence = text[start_index: start_index + maxlen]
         generated += sentence
         print('----- Generating with seed: "' + sentence + '"')
         sys.stdout.write(generated)
-
+        # 产生出400个字符的生成文本
         for i in range(400):
+            # 初始化一个输入 1 -> 窗口大小 -> 词典向量
             x = np.zeros((1, maxlen, len(chars)))
             for t, char in enumerate(sentence):
                 x[0, t, char_indices[char]] = 1.
-
+	    # 模型进行预测
             preds = model.predict(x, verbose=0)[0]
+            # 
             next_index = sample(preds, diversity)
+            # 预测next_index转换为字符
             next_char = indices_char[next_index]
-
+            # 将输入右移一个字符  
+            # 原有sentence -> "abcddda"
+            # 产出新的char -> c 
+            # 右移一位 -> "bcdddac"
             generated += next_char
             sentence = sentence[1:] + next_char
 
