@@ -26,6 +26,9 @@ indexs:
  - site: 开源 
    url: open.html
    tag: open
+ - site: 深度学习
+   url: dl.html
+   tag: dl
  - site: 机器学习
    url: ml.html
    tag: ml
