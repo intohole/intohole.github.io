@@ -79,7 +79,11 @@ model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Dropout(0.25))
 model.add(Flatten())
 # 全联接
+# Dense 全联接 
+# units 128 输出序列长度 
+# activation relu 激活函数
 model.add(Dense(128, activation='relu'))
+# Dropout 失效网络
 model.add(Dropout(0.5))
 # softmax多分类
 model.add(Dense(num_classes, activation='softmax'))
