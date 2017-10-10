@@ -6,15 +6,16 @@ title: keras LSTM例子注释
 ---
 
 ```python
-'''This example demonstrates the use of fasttext for text classification
+'''这是一个用fasttext进行文本分类的例子
 
-Based on Joulin et al's paper:
+基于 oulin et al 的论文:
 
-Bags of Tricks for Efficient Text Classification
+文本分类上的词袋技巧
 https://arxiv.org/abs/1607.01759
 
+我们在IMDB数据集使用Uni-gram（单个词）和bi-gram(两个词)词编码:
 Results on IMDB datasets with uni and bi-gram embeddings:
-    Uni-gram: 0.8813 test accuracy after 5 epochs. 8s/epoch on i7 cpu.
+    Uni-gram: 在5轮迭代后，我们得到0.8813准确率 . 在i7处理器上8s/迭代 .
     Bi-gram : 0.9056 test accuracy after 5 epochs. 2s/epoch on GTx 980M gpu.
 '''
 
@@ -144,5 +145,4 @@ model.fit(x_train, y_train,
 ```
 参考文章
 ------------
-+ [keras lstm例子](https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py)
-+ [卷积神经网络中的优化算法比较](http://shuokay.com/2016/06/11/optimization/)
++ [keras lstm例子](https://github.com/fchollet/keras/blob/master/examples/imdb_fasttext.py)
