@@ -2,7 +2,7 @@
 layout: default
 tags: [dl]
 city: 杭州
-title: keras LSTM例子注释
+title: keras fasttext例子代码解析
 ---
 
 ```python
@@ -32,7 +32,7 @@ from keras.datasets import imdb
 
 def create_ngram_set(input_list, ngram_value=2):
     """
-    Extract a set of n-grams from a list of integers.
+    从整数数组中抽取n-grams去重set
 
     >>> create_ngram_set([1, 4, 9, 4, 1, 4], ngram_value=2)
     {(4, 9), (4, 1), (1, 4), (9, 4)}
@@ -71,8 +71,8 @@ def add_ngram(sequences, token_indice, ngram_range=2):
 
     return new_sequences
 
-# Set parameters:
-# ngram_range = 2 will add bi-grams features
+# 设置参数:
+# ngram_range = 2 会添加 bi-gram（二元文法） 文本特征 
 ngram_range = 1
 max_features = 20000
 maxlen = 400
@@ -89,30 +89,34 @@ print('Average test sequence length: {}'.format(np.mean(list(map(len, x_test)), 
 
 if ngram_range > 1:
     print('Adding {}-gram features'.format(ngram_range))
-    # Create set of unique n-gram from the training set.
+    #  从训练数据集中，创建n-gram去重set
     ngram_set = set()
     for input_list in x_train:
         for i in range(2, ngram_range + 1):
             set_of_ngram = create_ngram_set(input_list, ngram_value=i)
             ngram_set.update(set_of_ngram)
-
-    # Dictionary mapping n-gram token to a unique integer.
+    # 对n-gram词产出不同序号的词典
+    # 这些序号的值要大于max_features 
     # Integer values are greater than max_features in order
-    # to avoid collision with existing features.
+    # 去避免跟已有的特征重合
     start_index = max_features + 1
+    # 词 -> 序号
     token_indice = {v: k + start_index for k, v in enumerate(ngram_set)}
+    # 序号 -> 词
     indice_token = {token_indice[k]: k for k in token_indice}
 
     # max_features is the highest integer that could be found in the dataset.
+    # 需要更新max_features
     max_features = np.max(list(indice_token.keys())) + 1
 
-    # Augmenting x_train and x_test with n-grams features
+    # 对x_train和x_test用n-grams特征进行扩充
     x_train = add_ngram(x_train, token_indice, ngram_range)
     x_test = add_ngram(x_test, token_indice, ngram_range)
     print('Average train sequence length: {}'.format(np.mean(list(map(len, x_train)), dtype=int)))
     print('Average test sequence length: {}'.format(np.mean(list(map(len, x_test)), dtype=int)))
 
 print('Pad sequences (samples x time)')
+# 截断补齐
 x_train = sequence.pad_sequences(x_train, maxlen=maxlen)
 x_test = sequence.pad_sequences(x_test, maxlen=maxlen)
 print('x_train shape:', x_train.shape)
@@ -123,6 +127,7 @@ model = Sequential()
 
 # we start off with an efficient embedding layer which maps
 # our vocab indices into embedding_dims dimensions
+# 
 model.add(Embedding(max_features,
                     embedding_dims,
                     input_length=maxlen))
@@ -144,5 +149,6 @@ model.fit(x_train, y_train,
           validation_data=(x_test, y_test))
 ```
 参考文章
-------------
+----
+
 + [keras lstm例子](https://github.com/fchollet/keras/blob/master/examples/imdb_fasttext.py)
