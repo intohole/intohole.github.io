@@ -12,7 +12,10 @@ title: keras fasttext例子代码解析
 
 文本分类上的词袋技巧
 https://arxiv.org/abs/1607.01759
-
+论文注释：
+    首先，扩展特征，进行序号编译
+    其次，通过embeding层，将每个词进行编码
+    最后，通过全联接，对应每个分类标记，迭代
 我们在IMDB数据集使用Uni-gram（单个词）和bi-gram(两个词)词编码:
 Results on IMDB datasets with uni and bi-gram embeddings:
     Uni-gram: 在5轮迭代后，我们得到0.8813准确率 . 在i7处理器上8s/迭代 .
@@ -45,15 +48,15 @@ def create_ngram_set(input_list, ngram_value=2):
 
 def add_ngram(sequences, token_indice, ngram_range=2):
     """
-    Augment the input list of list (sequences) by appending n-grams values.
+    通过n-gram，来扩充输入参数sequnences序列；
 
-    Example: adding bi-gram
+    例子：添加一元文法
     >>> sequences = [[1, 3, 4, 5], [1, 3, 7, 9, 2]]
     >>> token_indice = {(1, 3): 1337, (9, 2): 42, (4, 5): 2017}
     >>> add_ngram(sequences, token_indice, ngram_range=2)
     [[1, 3, 4, 5, 1337, 2017], [1, 3, 7, 9, 2, 1337, 42]]
 
-    Example: adding tri-gram
+    例子：添加二元文法
     >>> sequences = [[1, 3, 4, 5], [1, 3, 7, 9, 2]]
     >>> token_indice = {(1, 3): 1337, (9, 2): 42, (4, 5): 2017, (7, 9, 2): 2018}
     >>> add_ngram(sequences, token_indice, ngram_range=3)
@@ -128,15 +131,16 @@ model = Sequential()
 # we start off with an efficient embedding layer which maps
 # our vocab indices into embedding_dims dimensions
 # 
+# 进行编码
 model.add(Embedding(max_features,
                     embedding_dims,
                     input_length=maxlen))
 
-# we add a GlobalAveragePooling1D, which will average the embeddings
-# of all words in the document
+# 添加 GlobalAveragePooling1D,用来将整个文档所有词embedding进行归一化
+# {w1,w2 -> doc1} ; w1.vector = [1,2] ; w2.vector = [2,1] ; doc1 -> [1.5,1.5]
 model.add(GlobalAveragePooling1D())
 
-# We project onto a single unit output layer, and squash it with a sigmoid:
+# 增加一个全联接，作为输出层，激活函数为sigmoid , 输出层是一个多个分类
 model.add(Dense(1, activation='sigmoid'))
 
 model.compile(loss='binary_crossentropy',
