@@ -28,3 +28,8 @@ city: 杭州
 + [Extracting Product Features and Opinions from Reviews](https://turing.cs.washington.edu/papers/emnlp05_opine.pdf)
 + [Distributed Representations of Sentences and Documents](https://cs.stanford.edu/~quocle/paragraph_vector.pdf)
 + [使用setence2vec方法](http://stackoverflow.com/questions/29760935/how-to-get-vector-for-a-sentence-from-the-word2vec-of-tokens-in-sentence)
+
+
+深度学习
+-----------
++ [AliMe Chat: A Sequence to Sequence and Rerank based Chatbot Engine](http://www.aclweb.org/anthology/P17-2079)
