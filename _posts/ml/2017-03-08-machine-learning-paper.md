@@ -33,3 +33,8 @@ city: 杭州
 深度学习
 -----------
 + [AliMe Chat: A Sequence to Sequence and Rerank based Chatbot Engine](http://www.aclweb.org/anthology/P17-2079)
+
+
+2017 NLPCC PAPERS
+--------
++ [NLPCC PAPERS](http://tcci.ccf.org.cn/conference/2017/acceptpapers.php)
