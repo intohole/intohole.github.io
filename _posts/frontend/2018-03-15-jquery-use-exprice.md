@@ -48,6 +48,12 @@ var someClass = {
             var attr = t.attr("attrName");// 获得点击组件属性
             // do something
         }); 
+        // 增加table表格 ; 更新表格内容 
+        var tr = jQuery('<tr id="J_'+trId+'"></tr>')
+        tr.append(jQuery(<td>一个表格位置</td>))
+        tbody.append(tr)
+        // 发出警告信息，可以使用alter
+        alter("this is alter!");
     },
     alterHtml:function(){
         //<div id="J_Alter"></div>
