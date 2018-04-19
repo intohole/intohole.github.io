@@ -33,7 +33,7 @@ city: 杭州
 深度学习
 -----------
 + [AliMe Chat: A Sequence to Sequence and Rerank based Chatbot Engine](http://www.aclweb.org/anthology/P17-2079)
-
++ [Style Transfer in Text: Exploration and Evaluation(语言风格变化)](https://arxiv.org/pdf/1711.06861.pdf)
 
 2017 NLPCC PAPERS
 --------
