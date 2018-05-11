@@ -44,6 +44,7 @@
 ```
 	+ 介绍页面设置
 
+
 ```python
 	resume:
 		Desc:
@@ -60,7 +61,9 @@
 				name: 看似大男人的小男人
 				url: http://weibo.com/1152049780 
 ```
-
+    + type 配置参考 http://www.fontawesome.com.cn/ 图标 ， 可以省略fa- 开头，目前集成这个
+    + name 显示文字
+    + url 跳转链接
 
 + CNAME
 	+ 设置自己网站的重定向，参照我的设置，请各位在清空这个设置后使用我的网页

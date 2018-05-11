@@ -64,6 +64,7 @@ resume:
  Desc:
    - info: "机器学习 自然语言处理 架构 前端  全栈工程师 为解决问题而努力，没有高大上的词汇，只有最平凡的词汇，用程序延伸自己的思想 etc ... "
 
+# type : http://www.fontawesome.com.cn/ 请参考这个网站图标，一般来说，不需要fa开头，就是方便集成而已
  Jobs:
    -
      type: envelope
