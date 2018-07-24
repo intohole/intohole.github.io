@@ -5,9 +5,7 @@ city: 杭州
 title: keras多显卡训练及预测需要注意点
 ---
 + 训练代码
-  - 
-    ```python
-        
+    ```python            
     from keras.utils import multi_gpu_model
     # 0 < gpus <= 你真实含有的gpu数量 
     parallel_model = multi_gpu_model(model, gpus=8)
