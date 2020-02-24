@@ -370,7 +370,7 @@ a.posturl {
 }
 a {
   text-decoration: none;
-  color: #271af3;
+  color: #6495ed;
   text-shadow: none;
 }
 
@@ -474,7 +474,8 @@ ul li  {
   margin-left: 12px;
   font-size: 13px;
   line-height: 1.4 ;
-  color: #3b3939;
+  color: #4e4e4e;
+  font-weight: bold;
 
 }
 
