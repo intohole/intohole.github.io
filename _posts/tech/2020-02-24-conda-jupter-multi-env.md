@@ -7,6 +7,8 @@ city: 上海
 
 安装环境
 ---------
+
+
 + [Anaconda3的安装和使用](https://www.jianshu.com/p/b627671ca1f3)
 + [Anconda3 Linux下载地址](https://www.anaconda.com/distribution/#linux)
 + 使用wget命令,下载Anconda3安装包
@@ -14,8 +16,12 @@ city: 上海
     bash Anaconda3-5.2.0-Linux-x86_64.sh
     # 按照提示输入，否则可以一直enter
 ```
+
+
 Anconda基础命令行
 ------
+
+
 ```shell
   conda info --envs # 查看虚拟环境
   conda create -n 虚拟环境名称 python=python版本号 #(eg:python=python2.7)
@@ -23,6 +29,8 @@ Anconda基础命令行
   conda detivate  # 返回上一个虚拟环境
   conda install 包名 # 例如:jieba
 ```
+
+
 Anconda启动jupyter
 ---------
 + 启动jupter
@@ -33,6 +41,8 @@ Anconda启动jupyter
 ```shell
   jupyter notebook passwd
 ```
+
+
 Anconda启动多环境(python2/python3)
 ---------
 + 创建环境
