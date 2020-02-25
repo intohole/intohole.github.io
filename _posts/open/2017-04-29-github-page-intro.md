@@ -1,13 +1,14 @@
 ---
 layout: post
 tags: [open]
-title: 创建githubpage	
+title: 创建 github Page	
 city: 杭州 
 ---
 
 
-
+创建 github Page
 =========
+
 + [fork](https://github.com/intohole/intohole.github.com)
 + 更改你的工程名称->setting->Repository name
 	+ ${username}.github.com
@@ -17,6 +18,7 @@ city: 杭州
 + 更改\_config.yml文件选项
     + 请详细看[\_config.yml配置](https://github.com/intohole/intohole.github.com/blob/master/README.md)
 + 编写内容在\_post/ 目录下
+
 ```markdown
 ---
 layout: post
