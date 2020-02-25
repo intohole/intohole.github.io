@@ -10,11 +10,12 @@ xsegment自然语言工具
 =========
 
 
-*正向最大匹配  
-*逆向最大匹配  
-*词典树  
-*hmm分词  
-*正则预分词  
++ 正向最大匹配  
++ 逆向最大匹配  
++ 词典树  
++ hmm分词  
++ 正则预分词
+
 ```python
 from xsegment.ZooSegment import * 
 from xsegment.hmm import HSegment 
@@ -27,6 +28,7 @@ print " ".join(seg.segment(  "如果不肯换位体验，能不能让他们失�
 
 中文拼音支持
 ---------------------
+
 ```python
 p = pinyin()  
 print p.pinyin_segment('12上帝3aa') #12 shang di 3aa 
@@ -36,8 +38,10 @@ print p.zh2pinyin('我爱a') # wo ai a 不会自动转换不是汉字
 print p.zh2pinyin('我爱a' , '#') # wo#ai#a
 
 ```
+
 情感极性简单分析
 ---------------------
+
 ```python
 from psentiment import SentimentTrie
 sentiment = SentimentTrie()
@@ -46,16 +50,20 @@ print sentiment.get_words_sentiment(['我' , '喜欢' , '你']) #[('\xe6\x88\x91
 print sentiment.get_sentence_sentiment(['我' , '喜欢' , '你']) # 返回2.48107221007 情感为积极
 print sentiment.get_sentence_sentiment(['我' , '恨' , '你']) #-0.4392 情感为消极
 ```
+
 词性标注
 ----------------------
+
 ```python
 from xsegment.tag import HSpeech  
 print h.tag('我 早饭 我 的 祖国 !')  
 print h.tag('xsegment')   
 ```
+
 关键词提取
 -----------
-* textrank  
+
++ textrank  
 
 ```python
 from xsegment.textrank import TextRank1
@@ -65,7 +73,7 @@ for i in TextRank1.sort_score(scoremap , 12):
     print i[0], i[1]
 ```
 
-* tfidf
++ tfidf
 ```python
 from xsegment.tfidf import TfIdf
 tfidf = TfIdf("idf.file")
@@ -83,6 +91,7 @@ tfidf.calc("a b b")
 
 词语义距离
 --------------
+
 + 基于哈工大开源词林词典实现（词典已经很久没更新，使用word2vec会更加好一点？）
 
 ```python
@@ -90,6 +99,7 @@ from xsegment.wordsim import WordSim
 wordsim = WordSim()
 wordsim.word_sim("你" , "我" ， desc = True) #返回词之间距离数组 ， 按照降序排列 ， 升序 desc = False
 ```
+
 自动摘要
 -------------
 + 基于自然语言摘要
@@ -101,6 +111,7 @@ from xsegment.summary import TextRankSummary
 summary = SimpleSummary() #TextRankSummary()
 summary.summary("文章内容" , "标题" ) #返回摘要
 ```
+
 Simhash文本相似计算
 ------------
 
@@ -116,6 +127,7 @@ Simhash文本相似计算
 
 文档相似度计算
 ----------------
+
 + 余弦算法
 ```python
 from xsegment.similar import consine
