@@ -4,6 +4,12 @@ title: 布衣客
 ---
 
 <div id="home">
+    <h1>最新</h1>
+    <ul class="post">
+       {% for post in site.posts limit :site.page_limit%}
+           <li><span>{{ post.date | date: "%Y年%m月%d日" }}</span> &raquo; <a class="posturl" href="{{ post.url }}">{{ post.title }}</a></li>
+       {% endfor %}
+    </ul>
     {% for tag in site.indexs %}
     {% if tag.tag %}
            <h1>{{ tag.site }}</h1>
