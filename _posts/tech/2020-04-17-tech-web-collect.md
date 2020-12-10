@@ -13,3 +13,4 @@ city: 上海
 + [腾讯前端博客](http://www.alloyteam.com/page/0/)
 + [阿里前端博客](https://fed.taobao.org/blogs/?spm=taofed.homepage.header.3.7eab5ac8hYTo6Z)
 + [uber工程](https://eng.uber.com/)
++ [有赞技术博客](https://tech.youzan.com/)
