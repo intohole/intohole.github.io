@@ -50,6 +50,9 @@ indexs:
  - site: 生活
    url: life.html
    tag: life
+ - site: 论文
+   url: paper.html
+   tag: paper
  - site: 关于me
    url: resume.html
 page_404:
