@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 警惕代码腐化
+title: 管理经验脑图
 tags: [tech]
 city: 南京
 ---
