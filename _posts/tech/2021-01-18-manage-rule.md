@@ -12,4 +12,4 @@ city: 南京
 
 
 
-![/images/manager-exprience.png](管理经验脑图)
+![管理经验脑图](/images/manager-exprience.png)
