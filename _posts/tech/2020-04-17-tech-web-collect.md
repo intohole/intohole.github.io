@@ -14,3 +14,4 @@ city: 上海
 + [阿里前端博客](https://fed.taobao.org/blogs/?spm=taofed.homepage.header.3.7eab5ac8hYTo6Z)
 + [uber工程](https://eng.uber.com/)
 + [有赞技术博客](https://tech.youzan.com/)
++ [爱彼迎技术博客](https://medium.com/airbnb-engineering)
