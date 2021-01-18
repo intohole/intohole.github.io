@@ -13,3 +13,7 @@ city: 南京
 架构图
 ---------
 ![特征架构图](/images/feature-project-struct.png)
+
+参考
+--------
++ [外卖排序系统特征生产框架](https://tech.meituan.com/2016/12/09/feature-pipeline.html)
