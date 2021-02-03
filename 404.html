@@ -12,9 +12,9 @@ title: 404
             <span>4</span>
         </div>
         <div class="btn">
-            {% for post in site.page_404.btns limit:5 %}
-	            <a href="{{ btn.url }}" class="button button-rounded">{{ btn.info }}</a>
-	       {% endfor %}
+            {% for btn in site.page_404.btns limit:5 %}
+	         <a href="{{ btn.url }}" class="button button-rounded">{{ btn.info }}</a>
+	     {% endfor %}
             
         </div>   
     </div>
