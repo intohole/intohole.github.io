@@ -55,9 +55,11 @@ indexs:
    tag: paper
  - site: 关于me
    url: resume.html
-page_404:
-  - refresh_time: 7
-  - btns:
+ 
+ 
+ page_404:
+  refresh_time: 7
+  btns:
      - info: 看看我的Github
        url: https://github.com/intohole
      - info: 看看首页
