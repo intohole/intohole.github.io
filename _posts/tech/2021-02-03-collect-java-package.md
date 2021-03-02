@@ -52,3 +52,5 @@ JAVA & 算法日常开发，站在巨人的肩膀，最大化自己效率，把�
             <version>5.1.8.RELEASE</version>
          </dependency>
         ```
+ + redison
+ + webmagic
