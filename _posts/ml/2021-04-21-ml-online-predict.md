@@ -14,3 +14,7 @@ city: 南京
 参考
 --------
 + [机器学习模型线上部署感受](https://www.jianshu.com/p/827c74aa72a5)
++ [PMML模型文件在机器学习的实践经验](https://zhuanlan.zhihu.com/p/30378213)
++ [XGBoost使用PMML部署的预测偏差](https://zhuanlan.zhihu.com/p/84397379)
++ [微博在线机器学习和深度学习实践](https://www.infoq.cn/article/klcy-v52brjx8vr19fe9)
++ 
