@@ -19,8 +19,8 @@ OKR具备的要性(SMART)
    + 有时间限制，就是不能无限拖延。
 
 
-
-
+参考
+------------------
 + [目标管理—OKR、SMART原则](https://zhuanlan.zhihu.com/p/212098281)
 + [从GMV出发，看目标拆分与公式拆解](http://www.woshipm.com/operate/4000572.html)
 + [学习笔记-用户增长【10】我们的增长目标怎么拆解？](https://zhuanlan.zhihu.com/p/76618031)
