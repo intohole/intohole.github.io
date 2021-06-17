@@ -5,7 +5,7 @@ tags: [tech]
 city: 上海
 ---
 
-国内互联网巨头技术博客
+互联网巨头技术博客
 ---------
 + [美团技术](https://tech.meituan.com/)
 + [阿里中间件](http://jm.taobao.org/)
@@ -15,3 +15,8 @@ city: 上海
 + [uber工程](https://eng.uber.com/)
 + [有赞技术博客](https://tech.youzan.com/)
 + [爱彼迎技术博客](https://medium.com/airbnb-engineering)
+
+
+互联网相关网站
+-------------------
++ [人人都是产品经理](http://www.woshipm.com/)
