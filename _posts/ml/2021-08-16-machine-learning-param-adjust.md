@@ -1,6 +1,6 @@
 ---
 layout: default
-tags: [life]
+tags: [ml]
 city: 南京
 title: 调参 - 整理
 ---
