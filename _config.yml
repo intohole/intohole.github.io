@@ -14,6 +14,7 @@ code_type: manni
 #index.html 每个ｔａｇ展现的链接数目
 page_limit: 10
 #设置变量时候，不要ｔａｂ，一定要空格
+page_refresh: 10 
 indexs:
  - site: 首页
    url: index.html
