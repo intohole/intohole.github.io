@@ -23,7 +23,7 @@
 ```python		
 	indexs:
 		- site: 首页
-		  url: index.html
+		  url: indexHome.html
 	# site 分类名称 , index.html 页面地址 ;请参考我的博客设置
 ```
 	+ 404页面设置
@@ -35,7 +35,7 @@
    					- info: 看看我的Github
      			      url: https://github.com/intohole
    					- info: 看看首页
-                      url: /index.html
+                      url: /indexHome.html
 ```
 	+ 代码的格式设置，请参考
 

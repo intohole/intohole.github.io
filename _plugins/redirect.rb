@@ -32,7 +32,7 @@ module Jekyll
       @site = site
       @base = base
       @dir  = path
-      @name = 'index.html'
+      @name = 'indexHome.html'
       self.process(@name)
       
       # Read the YAML data from the layout page.
