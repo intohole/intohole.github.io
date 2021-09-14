@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 tags: [life]
 city: 北京
 title: 番茄时间管理

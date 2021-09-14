@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 tags: [life]
 city: 南京
 title: 看到和思考的认知 - 一直在路上
