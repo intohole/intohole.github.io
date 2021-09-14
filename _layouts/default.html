@@ -6,8 +6,16 @@
    <meta name="apple-mobile-web-app-capable" content="yes" />
    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
    <title>{{ page.title }}</title>
+   {% if page.redirect %}
+      {% if page.refresh %}
+        <meta http-equiv="refresh" content="{{ page.refresh }}; url={{ page.redirect }}">
+      {% else %}
+        <meta http-equiv="refresh" content="{{ site.page_refresh }}; url={{ page.redirect }}">
+      {% endif %}
+   {% endif %}
+
    {% if page.url == "/404.html" %}
-      <meta http-equiv="refresh" content="5; url=/index.html">
+      <meta http-equiv="refresh" content="5; url=/indexHome.html">
    {% endif %}
    <meta name="author" content="intohole" />
    <link rel="stylesheet" href="/css/default.css" type="text/css" media="screen, projection" /> 
